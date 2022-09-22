@@ -3,16 +3,15 @@
 @import "./utils/mixins";
 @import "./base/typography";
 @import "./components/buttons";
+@import "./components/etape-card";
+@import "./components/restaurant-card";
 @import "./layout/header";
-@import "./layout/footer";
 @import "./pages/home";
 @import "./pages/restaurant";
+@import "./layout/footer";
 
-h1 {
-  background-color: $primary;
-  font-family: shrikhand,serif;
-  font-size: 3em;
-}
+
+
 
 .utils p {
   padding: 20px;

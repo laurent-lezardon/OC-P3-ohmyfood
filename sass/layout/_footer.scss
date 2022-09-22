@@ -1,0 +1,22 @@
+footer {
+    
+    background-color: $footer;
+    color:white;
+    padding: 2.6rem;
+    h2 {
+        font-size: 1.2rem;
+        font-family: shrikhand, serif;
+        margin-bottom: 2rem;
+    }
+    a {
+        color: inherit;
+    }
+    li {
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+    }
+    i {
+        width: 2rem;
+        margin-right: 1rem;
+    }
+}

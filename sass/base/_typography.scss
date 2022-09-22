@@ -1,7 +1,25 @@
 @font-face {
-    font-family: roboto;
+    font-family: "Roboto";
     src: url(../../assets/fonts/roboto/Roboto-Regular.ttf);
 
     font-family: shrikhand;
     src: url(../../assets/fonts/shrikhand/Shrikhand-Regular.ttf);
 }
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Roboto",sans-serif;
+}
+h1 {
+    font-size: 2.8rem;
+    font-family: shrikhand,serif;
+}
+h2 {
+    font-size: 2.2rem;
+    
+}
+a {
+    text-decoration: none;
+}
+
