@@ -1,21 +1,25 @@
 .etape-card {
     
-    background-color: $section;
-    border-radius: 1.5rem;
-    padding: 3rem;
+    background-color: $col-section;
+    border-radius: 3rem;
+    padding: 3rem 2rem 3rem 3rem;
     position: relative;
     span {
+        font-family: Roboto,sans-serif;
         font-size: 1.6rem;
+        font-weight: 500;
+        margin-left: 3rem;
     }
     i {
         font-size: 1.8rem;
-        color: $home-icons;
+        color: $col-home-icons;
     }
     span:last-child {
-        font-size: 2.4rem;
-        color: $primary;
+        font-size: 3rem;
+        color: $col-primary;
         position: absolute;
-        left: -1.2rem;
+        left: -4rem;
+        top:2.5rem;
 
     }
 }

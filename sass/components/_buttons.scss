@@ -4,16 +4,17 @@
   padding: auto;
   padding-left: 2.3rem;
   padding-right: 2.3rem;
+
   line-height: 5rem;
   background: linear-gradient(
     356deg,
-    rgba(147, 86, 220, 1) 0%,
-    rgba(255, 121, 218, 1) 100%
+    $col-primary 0%,
+    $col-secundary 100%
   );
   border-radius: 2.5rem;
   a {
     color: white;
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: 500;
   }
 }

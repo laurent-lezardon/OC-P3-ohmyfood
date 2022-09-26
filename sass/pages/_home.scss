@@ -3,19 +3,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $col-footer;
   background: linear-gradient(
     0deg,
-    $location-bottom 0%,
-    $location-bottom 80%,
-    $location-top 100%
+    $col-location-bottom 0%,
+    $col-location-bottom 80%,
+    $col-location-top 100%
   );
   height: 5rem;
   i {
+    
     font-size: 1.6rem;
     margin-right: 1.8rem;
   }
   p {
-    font-size: 1.3rem;
+    font-family: Roboto, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    
     
   }
 }
@@ -25,10 +30,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $section;
+    background-color: $col-section;
     padding: 4rem;
     h2,p {
         padding-bottom: 2rem;
+        text-align: center;
     }
     p {
         font-size: 1.6rem;

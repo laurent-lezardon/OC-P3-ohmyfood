@@ -5,6 +5,7 @@
 @import "./components/buttons";
 @import "./components/etape-card";
 @import "./components/restaurant-card";
+@import "./components/restaurant-header";
 @import "./layout/header";
 @import "./pages/home";
 @import "./pages/restaurant";
@@ -16,6 +17,6 @@
 .utils p {
   padding: 20px;
   font-size: 20px;
-  color: $secundary;
+  color: $col-secundary;
   
 }
