@@ -141,23 +141,32 @@ a {
   background-color: #f6f6f6;
   border-radius: 3rem;
   padding: 3rem 2rem 3rem 3rem;
+  margin-bottom: 2rem;
   position: relative;
 }
-.etape-card span {
+.etape-card .etape-content {
+  display: flex;
+}
+.etape-card .etape-content__icone {
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.etape-card .etape-content p {
   font-family: Roboto, sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
-.etape-card i {
+.etape-card .etape-content i {
   font-size: 1.8rem;
   color: #7e7e7e;
 }
-.etape-card span:last-child {
+.etape-card span {
+  position: absolute;
   font-size: 3rem;
   color: #9356dc;
-  position: absolute;
-  left: -4rem;
+  left: -1rem;
   top: 2.5rem;
 }
 
@@ -165,6 +174,7 @@ a {
   border-radius: 2rem;
   margin-bottom: 2rem;
   overflow: hidden;
+  color: black;
 }
 .restaurant-card__img {
   width: 100%;
@@ -203,42 +213,19 @@ a {
 }
 .restaurant-plaque__coeur {
   font-size: 3rem;
-  color: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
-}
-.restaurant-plaque__coeur img {
-  width: 2rem;
-  background-color: black;
 }
 .restaurant-plaque__coeur span {
-  background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
+  font-size: 3rem;
+}
+.restaurant-plaque__coeur span:hover {
+  background: linear-gradient(214deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
   color: transparent;
-  font-weight: 100;
-  font-size: 3rem;
-}
-.restaurant-plaque__coeur i {
-  color: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
-}
-
-.material-icons.md-24 {
-  font-size: 3rem;
-  font-weight: 100;
-}
-.material-icons.md-24:hover {
-  color: blue;
-}
-
-.restaurant-plaque__coeur--plein {
-  color: #ff79da;
 }
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 100, "GRAD" 0, "opsz" 48;
-}
-
-.colored {
-  fill: red;
 }
 
 .restaurant-header {
@@ -325,11 +312,6 @@ header a {
   padding-bottom: 2rem;
 }
 
-.fa-color {
-  color: red;
-  font-weight: 100;
-}
-
 .retour-accueil {
   position: relative;
 }
@@ -363,10 +345,4 @@ footer li {
 footer i {
   width: 2rem;
   margin-right: 1rem;
-}
-
-.utils p {
-  padding: 20px;
-  font-size: 20px;
-  color: #ff79da;
 }/*# sourceMappingURL=style.css.map */

@@ -1,25 +1,33 @@
 .etape-card {
-    
-    background-color: $col-section;
-    border-radius: 3rem;
-    padding: 3rem 2rem 3rem 3rem;
-    position: relative;
-    span {
-        font-family: Roboto,sans-serif;
-        font-size: 1.6rem;
-        font-weight: 500;
-        margin-left: 3rem;
+  background-color: $col-section;
+  border-radius: 3rem;
+  padding: 3rem 2rem 3rem 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  
+  .etape-content {
+    display: flex;
+    &__icone {
+      width: 3rem;
+      display: flex;
+      justify-content: center;
     }
-    i {
-        font-size: 1.8rem;
-        color: $col-home-icons;
+    & p {
+      font-family: Roboto, sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-left: 1rem;
     }
-    span:last-child {
-        font-size: 3rem;
-        color: $col-primary;
-        position: absolute;
-        left: -4rem;
-        top:2.5rem;
-
+    & i {
+      font-size: 1.8rem;
+      color: $col-home-icons;
     }
+  }
+  & span {
+    position: absolute;
+    font-size: 3rem;
+    color: $col-primary;
+    left: -1rem;
+    top: 2.5rem;
+  }
 }
