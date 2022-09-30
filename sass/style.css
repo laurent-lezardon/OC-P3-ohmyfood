@@ -100,12 +100,7 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-h1 {
-  font-size: 2.8rem;
-  font-family: shrikhand, serif;
-}
-
-h2 {
+h1, h2 {
   font-family: Roboto, sans-serif;
   font-size: 2.4rem;
   font-weight: 900;
@@ -115,6 +110,10 @@ p {
   font-family: Roboto, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
+}
+p.logo {
+  font-size: 2.8rem;
+  font-family: shrikhand, serif;
 }
 
 a {
@@ -245,7 +244,7 @@ a {
   border-radius: 3rem 3rem 0 0;
   padding: 2rem;
 }
-.restaurant-header__content h2 {
+.restaurant-header__content h1 {
   font-size: 2.8rem;
   font-family: shrikhand, serif;
   font-weight: 400;
@@ -288,7 +287,7 @@ header a {
   background-color: #f6f6f6;
   padding: 4rem;
 }
-.accueil__center h2, .accueil__center p {
+.accueil__center h1, .accueil__center p {
   padding-bottom: 2rem;
   text-align: center;
 }
