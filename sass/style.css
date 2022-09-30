@@ -120,6 +120,10 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  text-transform: capitalize;
+}
+
 .bouton {
   display: inline-block;
   height: 5rem;
@@ -136,12 +140,47 @@ a {
   font-weight: 500;
 }
 
+.coeur {
+  font-size: 4rem;
+}
+.coeur span:first-child {
+  background-color: transparent;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.3s;
+  font-size: 4rem;
+}
+.coeur span:first-child:hover {
+  z-index: 2;
+  background: linear-gradient(214deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.coeur span:last-child {
+  font-size: 4rem;
+  position: absolute;
+  opacity: 1;
+  transform: translateX(-100%);
+}
+.coeur span:last-child:hover {
+  opacity: 0;
+  transform: translateX(0);
+}
+
 .etape-card {
   background-color: #f6f6f6;
   border-radius: 3rem;
   padding: 3rem 2rem 3rem 3rem;
   margin-bottom: 2rem;
   position: relative;
+  width: 28rem;
+  transition: background-color 0.3s ease-in;
+}
+.etape-card:hover {
+  background-color: #f5edff;
 }
 .etape-card .etape-content {
   display: flex;
@@ -160,6 +199,7 @@ a {
 .etape-card .etape-content i {
   font-size: 1.8rem;
   color: #7e7e7e;
+  transition: color 0.3s ease-in;
 }
 .etape-card span {
   position: absolute;
@@ -169,11 +209,33 @@ a {
   top: 2.5rem;
 }
 
+.etape-card:hover .etape-content i {
+  color: #9356dc;
+}
+
 .restaurant-card {
   border-radius: 2rem;
   margin-bottom: 2rem;
+  max-width: 35rem;
   overflow: hidden;
   color: black;
+}
+.restaurant-card--new {
+  position: relative;
+}
+.restaurant-card--new::after {
+  content: "Nouveau";
+  color: #008766;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  height: 3rem;
+  width: 8rem;
+  background-color: #99e2d0;
+  opacity: 0.8;
 }
 .restaurant-card__img {
   width: 100%;
@@ -210,22 +272,6 @@ a {
   font-size: 1.6rem;
   font-family: Roboto, sans-serif;
 }
-.restaurant-plaque__coeur {
-  font-size: 3rem;
-}
-.restaurant-plaque__coeur span {
-  font-size: 3rem;
-}
-.restaurant-plaque__coeur span:hover {
-  background: linear-gradient(214deg, #9356dc 0%, #ff79da 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 1, "wght" 100, "GRAD" 0, "opsz" 48;
-}
 
 .restaurant-header {
   overflow: hidden;
@@ -246,6 +292,7 @@ a {
 }
 .restaurant-header__content h1 {
   font-size: 2.8rem;
+  text-transform: capitalize;
   font-family: shrikhand, serif;
   font-weight: 400;
 }

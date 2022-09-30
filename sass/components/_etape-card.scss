@@ -1,9 +1,17 @@
+$col-etape-hover:#f5edff;
+
+
 .etape-card {
   background-color: $col-section;
   border-radius: 3rem;
   padding: 3rem 2rem 3rem 3rem;
   margin-bottom: 2rem;
   position: relative;
+  width: 28rem;
+  transition: background-color 0.3s ease-in;
+  &:hover {
+    background-color: $col-etape-hover;
+  }
   
   .etape-content {
     display: flex;
@@ -19,9 +27,12 @@
       margin-left: 1rem;
     }
     & i {
+      
       font-size: 1.8rem;
       color: $col-home-icons;
+      transition: color 0.3s ease-in;
     }
+    
   }
   & span {
     position: absolute;
@@ -30,4 +41,7 @@
     left: -1rem;
     top: 2.5rem;
   }
+}
+.etape-card:hover .etape-content i {
+  color:$col-primary;
 }

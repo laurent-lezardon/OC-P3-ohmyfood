@@ -1,8 +1,9 @@
 @import "./base/reset";
 @import "./utils/variables";
-@import "./utils/mixins";
+@import "./utils/_mixins";
 @import "./base/typography";
 @import "./components/buttons";
+@import "./components/coeur";
 @import "./components/etape-card";
 @import "./components/restaurant-card";
 @import "./components/restaurant-header";

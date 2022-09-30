@@ -1,0 +1,39 @@
+
+@mixin habillage-texte {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+
+
+.coeur {
+    font-size: 4rem;
+    & span:first-child {
+      background-color: transparent;
+      position: relative;
+      @include habillage-texte();
+      transition: all 0.3s;
+      font-size: 4rem;
+      &:hover {
+        z-index: 2;
+        background: linear-gradient(
+          214deg,
+          $col-primary 0%,
+          $col-secundary 100%
+        );
+        @include habillage-texte();
+      }
+    }
+    & span:last-child {
+      font-size: 4rem;
+      position: absolute;
+      opacity: 1;
+      // z-index: 2;
+      transform: translateX(-100%);
+      &:hover {
+        opacity: 0;
+        transform: translateX(0);
+      }
+    }
+  }
