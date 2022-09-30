@@ -121,7 +121,13 @@ a {
 }
 
 h3 {
-  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .bouton {
@@ -141,7 +147,7 @@ h3 {
 }
 
 .coeur {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .coeur span:first-child {
   background-color: transparent;
@@ -150,7 +156,7 @@ h3 {
   -webkit-background-clip: text;
   color: transparent;
   transition: all 0.3s;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .coeur span:first-child:hover {
   z-index: 2;
@@ -160,7 +166,8 @@ h3 {
   color: transparent;
 }
 .coeur span:last-child {
-  font-size: 4rem;
+  font-size: 3rem;
+  color: grey;
   position: absolute;
   opacity: 1;
   transform: translateX(-100%);
@@ -292,12 +299,78 @@ h3 {
 }
 .restaurant-header__content h1 {
   font-size: 2.8rem;
-  text-transform: capitalize;
   font-family: shrikhand, serif;
   font-weight: 400;
 }
 .restaurant-header__content i {
   font-size: 2.8rem;
+}
+
+.plat-card-box {
+  height: 7rem;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.plat-card {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  transition-duration: 2s;
+}
+.plat-card__display {
+  width: 100%;
+  padding: 1.6rem 2.2rem 1.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plat-card__content {
+  height: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.plat-card__price {
+  align-self: flex-end;
+}
+.plat-card:hover {
+  width: calc(100% - 150px);
+}
+
+.plat-card:hover .box-check__icone i {
+  background-color: white;
+  transform: rotate(360deg);
+}
+
+.box-check {
+  width: 150px;
+  height: 100%;
+  background-color: #99e2d0;
+  position: absolute;
+  right: -150px;
+  text-align: center;
+}
+.box-check__icone {
+  font-size: 2rem;
+  color: #99e2d0;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.box-check__icone i {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  transform: rotate(180deg);
+  transition-duration: 2s;
 }
 
 header {
@@ -368,6 +441,19 @@ header a {
   font-size: 2rem;
   display: inline;
   color: black;
+}
+
+.menu {
+  display: flex;
+  padding: 1rem;
+  background-color: #f6f6f6;
+}
+.menu__categorie {
+  width: 100%;
+}
+.menu__categorie h2 {
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 footer {

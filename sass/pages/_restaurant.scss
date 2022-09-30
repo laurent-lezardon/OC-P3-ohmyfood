@@ -11,3 +11,16 @@
     
   }
 }
+.menu {
+  display: flex;
+  padding: 1rem;
+  background-color: $col-section;
+  &__categorie {
+    width: 100%;
+    h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+
+    }
+  }
+}
