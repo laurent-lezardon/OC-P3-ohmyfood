@@ -1,10 +1,13 @@
+$padding-explorer: 0 2.3rem;
+$padding-commander: 0 5rem;
+
 .bouton {
   display: inline-block;
   box-shadow: $box-shadow;
   height: 5rem;
-  padding: auto;
-  padding-left: 2.3rem;
-  padding-right: 2.3rem;
+  
+  padding: $padding-explorer;
+  margin: auto;
 
   line-height: 5rem;
   background: linear-gradient(
@@ -14,8 +17,14 @@
   );
   border-radius: 2.5rem;
   a {
+    display: inline-block;
+    height: 100%;
     color: white;
     font-size: 1.6rem;
     font-weight: 500;
+  }
+  &--commander {
+    padding: $padding-commander;
+    
   }
 }

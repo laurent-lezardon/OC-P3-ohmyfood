@@ -134,17 +134,21 @@ strong {
   display: inline-block;
   box-shadow: 0 5px 10px rgb(194, 192, 192);
   height: 5rem;
-  padding: auto;
-  padding-left: 2.3rem;
-  padding-right: 2.3rem;
+  padding: 0 2.3rem;
+  margin: auto;
   line-height: 5rem;
   background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
   border-radius: 2.5rem;
 }
 .bouton a {
+  display: inline-block;
+  height: 100%;
   color: white;
   font-size: 1.6rem;
   font-weight: 500;
+}
+.bouton--commander {
+  padding: 0 5rem;
 }
 
 .coeur {
@@ -320,11 +324,12 @@ strong {
 
 .plat-card {
   height: 100%;
+  font-size: 1.6rem;
   display: flex;
   width: 100%;
   background-color: white;
   position: relative;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 .plat-card__display {
   width: 100%;
@@ -334,34 +339,41 @@ strong {
   align-items: center;
 }
 .plat-card__content {
+  font-size: 1.6rem;
   height: 100%;
   min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.plat-card__content h3,
+.plat-card__content p {
+  padding-right: 3rem;
+  font-size: 1.6rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .plat-card__price {
   align-self: flex-end;
 }
-.plat-card:hover {
-  width: calc(100% - 150px);
+.plat-card__price strong {
+  font-size: 1.6rem;
 }
-
-.plat-card:hover .box-check__icone i {
-  background-color: white;
-  transform: rotate(360deg);
+.plat-card:hover {
+  width: calc(100% - 60px);
 }
 
 .box-check {
-  width: 150px;
+  width: 60px;
   height: 100%;
   background-color: #99e2d0;
   position: absolute;
-  right: -150px;
+  right: -60px;
   text-align: center;
 }
 .box-check__icone {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #99e2d0;
   display: flex;
   height: 100%;
@@ -369,13 +381,18 @@ strong {
   align-items: center;
 }
 .box-check__icone i {
-  height: 50px;
-  width: 50px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
-  line-height: 50px;
+  line-height: 25px;
   text-align: center;
   transform: rotate(180deg);
-  transition-duration: 2s;
+  transition-duration: 1s;
+}
+
+.plat-card:hover .box-check__icone i {
+  background-color: white;
+  transform: rotate(360deg);
 }
 
 header {
@@ -446,10 +463,13 @@ header a {
 .retour-accueil a {
   position: absolute;
   top: 0;
-  left: 2rem;
+  left: 1rem;
   font-size: 2rem;
   display: inline;
   color: black;
+}
+.retour-accueil a i {
+  width: 6rem;
 }
 
 .menu {
@@ -463,6 +483,24 @@ header a {
 .menu__categorie h2 {
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 1.6rem;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.menu__categorie h2::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  display: inline-block;
+  height: 0px;
+  width: 4rem;
+  border: solid 1px #99e2d0;
+}
+.menu__display-button {
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
 }
 
 footer {

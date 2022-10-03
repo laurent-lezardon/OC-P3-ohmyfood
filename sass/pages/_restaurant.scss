@@ -2,12 +2,16 @@
   position: relative;
   
   a {
+    
     position: absolute;
     top: 0;
-    left: 2rem;
+    left: 1rem;
     font-size: 2rem;
     display: inline;
     color: black;
+    i {
+      width: 6rem;
+    }
     
   }
 }
@@ -15,12 +19,31 @@
   display: flex;
   padding: 1rem;
   background-color: $col-section;
+  // font-size: 1.6rem;
   &__categorie {
     width: 100%;
     h2 {
       text-transform: uppercase;
       font-weight: 400;
+      font-size: 1.6rem;
+      position: relative;
+      margin-bottom: 2.5rem;
+      &::after {
+        content: "";
+        position:absolute;
+        bottom: -1rem;
+        left:0;
+        display: inline-block;
+        height: 0px;
+        width:4rem;
+        border: solid 1px $col-tertiary;
+      }
 
     }
+  }
+  &__display-button {
+    display: flex;
+    padding-top:5rem;
+    padding-bottom: 8rem;
   }
 }
