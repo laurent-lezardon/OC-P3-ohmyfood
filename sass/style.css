@@ -132,6 +132,7 @@ strong {
 
 .bouton {
   display: inline-block;
+  box-shadow: 0 5px 10px rgb(194, 192, 192);
   height: 5rem;
   padding: auto;
   padding-left: 2.3rem;
@@ -178,12 +179,15 @@ strong {
 }
 
 .etape-card {
+  margin-left: 1rem;
+  margin-right: 1rem;
   background-color: #f6f6f6;
+  box-shadow: 0 5px 10px rgb(194, 192, 192);
   border-radius: 3rem;
   padding: 3rem 2rem 3rem 3rem;
   margin-bottom: 2rem;
   position: relative;
-  width: 28rem;
+  width: calc(100% - 1rem);
   transition: background-color 0.3s ease-in;
 }
 .etape-card:hover {
@@ -223,7 +227,8 @@ strong {
 .restaurant-card {
   border-radius: 2rem;
   margin-bottom: 2rem;
-  max-width: 35rem;
+  box-shadow: 0 5px 10px rgb(194, 192, 192);
+  max-width: 70rem;
   overflow: hidden;
   color: black;
 }
@@ -407,7 +412,8 @@ header a {
   background-color: #f6f6f6;
   padding: 4rem;
 }
-.accueil__center h1, .accueil__center p {
+.accueil__center h1,
+.accueil__center p {
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -416,19 +422,22 @@ header a {
 }
 
 .fonctionnement {
-  margin: 0 2rem;
-  padding: 4.5rem 2rem;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 .fonctionnement h2 {
+  padding-top: 5.5rem;
   padding-bottom: 3rem;
 }
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: 5rem 4%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 6.5rem;
 }
 .restaurants h2 {
-  padding-bottom: 2rem;
+  padding: 6rem 0 2rem 0;
 }
 
 .retour-accueil {
@@ -477,4 +486,9 @@ footer li {
 footer i {
   width: 2rem;
   margin-right: 1rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* ============ MEDIA QUERIES =======================*/
+/* ============ Breakpoint 1  > 768px  =======================*/
+/* ============ MEDIA QUERIES =======================*/
+/* ============ Breakpoint 2  > 992px  =======================*//*# sourceMappingURL=style.css.map */

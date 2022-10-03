@@ -1,13 +1,17 @@
 $col-etape-hover:#f5edff;
+$vignet-gap: 1rem;
 
 
 .etape-card {
+  margin-left: $vignet-gap;
+  margin-right: $vignet-gap;
   background-color: $col-section;
+  box-shadow: $box-shadow;
   border-radius: 3rem;
   padding: 3rem 2rem 3rem 3rem;
   margin-bottom: 2rem;
   position: relative;
-  width: 28rem;
+  width: calc(100% - $vignet-gap);
   transition: background-color 0.3s ease-in;
   &:hover {
     background-color: $col-etape-hover;
@@ -38,7 +42,7 @@ $col-etape-hover:#f5edff;
     position: absolute;
     font-size: 3rem;
     color: $col-primary;
-    left: -1rem;
+    left: -$vignet-gap;
     top: 2.5rem;
   }
 }

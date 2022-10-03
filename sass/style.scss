@@ -1,7 +1,12 @@
+// *************** chargement base et utilitaires
+
 @import "./base/reset";
 @import "./utils/variables";
 @import "./utils/_mixins";
 @import "./base/typography";
+
+// *************** chargement des composants (cards, bouton, coeur)
+
 @import "./components/buttons";
 @import "./components/coeur";
 @import "./components/etape-card";
@@ -12,6 +17,11 @@
 @import "./pages/home";
 @import "./pages/restaurant";
 @import "./layout/footer";
+
+// *************** chargement media-queries
+
+@import "./media-queries/media+768";
+@import "./media-queries/media+992"
 
 
 
