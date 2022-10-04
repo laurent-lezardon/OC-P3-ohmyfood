@@ -139,6 +139,7 @@ strong {
   line-height: 5rem;
   background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
   border-radius: 2.5rem;
+  transition: all 0.3s ease-out;
 }
 .bouton a {
   display: inline-block;
@@ -150,6 +151,11 @@ strong {
 .bouton--commander {
   padding: 0 5rem;
 }
+.bouton:hover {
+  background: linear-gradient(356deg, #a16be0 0%, #ff93e1 100%);
+  box-shadow: 0 7px 7px 0 rgb(141, 141, 141);
+  transform: scale(1.01);
+}
 
 .coeur {
   font-size: 3rem;
@@ -157,22 +163,19 @@ strong {
 .coeur span:first-child {
   background-color: transparent;
   position: relative;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.3s;
+  background: transparent;
   font-size: 3rem;
+  opacity: 0;
 }
 .coeur span:first-child:hover {
+  opacity: 1;
   z-index: 2;
-  background: linear-gradient(214deg, #9356dc 0%, #ff79da 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  -webkit-animation: heart-filling 0.2s ease-in forwards;
+          animation: heart-filling 0.2s ease-in forwards;
 }
 .coeur span:last-child {
   font-size: 3rem;
-  color: grey;
+  color: black;
   position: absolute;
   opacity: 1;
   transform: translateX(-100%);
@@ -182,6 +185,47 @@ strong {
   transform: translateX(0);
 }
 
+@-webkit-keyframes heart-filling {
+  0% {
+    background: linear-gradient(214deg, #9356dc 0%, #ff79da 0%, white 0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(214deg, #9356dc 0%, #ff79da 50%, white 0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background: linear-gradient(214deg, #9356dc 0%, #ff79da 50%, white 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+@keyframes heart-filling {
+  0% {
+    background: linear-gradient(214deg, #9356dc 0%, #ff79da 0%, white 0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(214deg, #9356dc 0%, #ff79da 50%, white 0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background: linear-gradient(214deg, #9356dc 0%, #ff79da 50%, white 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
 .etape-card {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -235,6 +279,11 @@ strong {
   max-width: 70rem;
   overflow: hidden;
   color: black;
+  transition: all 0.3s ease-out;
+}
+.restaurant-card:hover {
+  box-shadow: 0 7px 7px 0 rgb(141, 141, 141);
+  transform: scale(1.01);
 }
 .restaurant-card--new {
   position: relative;
@@ -320,6 +369,11 @@ strong {
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 5px 10px rgb(194, 192, 192);
+  margin-bottom: 1.5rem;
+}
+.plat-card-box:last-child {
+  margin-bottom: 5rem;
 }
 
 .plat-card {
@@ -329,7 +383,8 @@ strong {
   width: 100%;
   background-color: white;
   position: relative;
-  transition-duration: 1s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
 }
 .plat-card__display {
   width: 100%;
@@ -346,10 +401,15 @@ strong {
   flex-direction: column;
   justify-content: space-between;
 }
+.plat-card__content h3 {
+  font-size: 1.6rem;
+}
+.plat-card__content p {
+  font-size: 1.4rem;
+}
 .plat-card__content h3,
 .plat-card__content p {
   padding-right: 3rem;
-  font-size: 1.6rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -386,8 +446,9 @@ strong {
   border-radius: 50%;
   line-height: 25px;
   text-align: center;
-  transform: rotate(180deg);
-  transition-duration: 1s;
+  transform: rotate(-360deg);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
 }
 
 .plat-card:hover .box-check__icone i {
@@ -472,11 +533,11 @@ header a {
   width: 6rem;
 }
 
-.menu {
-  display: flex;
+.menu__display {
   padding: 1rem;
   background-color: #f6f6f6;
 }
+
 .menu__categorie {
   width: 100%;
 }
@@ -497,12 +558,46 @@ header a {
   width: 4rem;
   border: solid 1px #99e2d0;
 }
+.menu__categorie .plat-card-box {
+  opacity: 0;
+}
 .menu__display-button {
   display: flex;
-  padding-top: 5rem;
   padding-bottom: 8rem;
 }
 
+.menu__categorie .plat-card-box:nth-child(2) {
+  -webkit-animation: plat-apparition 0.3s ease-in 0.6s forwards;
+          animation: plat-apparition 0.3s ease-in 0.6s forwards;
+}
+
+.menu__categorie .plat-card-box:nth-child(3) {
+  -webkit-animation: plat-apparition 0.3s ease-in 0.9s forwards;
+          animation: plat-apparition 0.3s ease-in 0.9s forwards;
+}
+
+.menu__categorie .plat-card-box:nth-child(4) {
+  -webkit-animation: plat-apparition 0.3s ease-in 1.2s forwards;
+          animation: plat-apparition 0.3s ease-in 1.2s forwards;
+}
+
+@-webkit-keyframes plat-apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes plat-apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
   background-color: #353535;
   color: white;
@@ -516,6 +611,10 @@ footer h2 {
 }
 footer a {
   color: inherit;
+  transition: font-size 0.3s ease-in;
+}
+footer a:hover {
+  font-size: larger;
 }
 footer li {
   font-size: 1.4rem;

@@ -1,41 +1,65 @@
+// ========== mixins coeur 
 
 @mixin habillage-texte {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+// ------ heart gradient permet de gerer le dégradé du coeur en pourcentage
+// de couleur primaire, secondaire et blanc pour simuler le remplissage
+@mixin heart-gradient($percent-primary-col, $percent-secundary-col, $percent-white) {
+  background: linear-gradient(214deg,
+      $col-primary $percent-primary-col,
+      $col-secundary $percent-secundary-col,
+      white $percent-white );
 
+}
 
-
+// ========== style coeurs 
 .coeur {
+  font-size: 3rem;
+  // ----- style du coeur plein qui apparait au hover
+
+  & span:first-child {
+    background-color: transparent;
+    position: relative;
+    // @include habillage-texte();
+    background: transparent;
+    // transition: all 0.3s;
     font-size: 3rem;
-    & span:first-child {
-      background-color: transparent;
-      position: relative;
-      @include habillage-texte();
-      transition: all 0.3s;
-      font-size: 3rem;
-      &:hover {
-        z-index: 2;
-        background: linear-gradient(
-          214deg,
-          $col-primary 0%,
-          $col-secundary 100%
-        );
-        @include habillage-texte();
-      }
-    }
-    & span:last-child {
-      font-size: 3rem;
-      color: grey;
-      // font-weight: 200!important;
-      position: absolute;
+    opacity: 0;
+    &:hover {
       opacity: 1;
-      // z-index: 2;
-      transform: translateX(-100%);
-      &:hover {
-        opacity: 0;
-        transform: translateX(0);
-      }
+      z-index: 2;
+      animation: heart-filling 0.2s ease-in forwards;
     }
   }
+// ----- style du coeur qui disparait au hover
+  & span:last-child {
+    font-size: 3rem;
+    color: black;
+    position: absolute;
+    opacity: 1;
+    transform: translateX(-100%);
+    &:hover {
+      opacity: 0;
+      transform: translateX(0);
+    }
+  }
+}
+
+// ========== animation remplissage du coeur 
+@keyframes heart-filling {
+  0% {
+    @include heart-gradient(0%, 0%, 0%);
+    @include habillage-texte();
+  }
+  50% {
+    @include heart-gradient(0%, 50%, 0%);
+    @include habillage-texte();
+  }
+  100% {
+    @include heart-gradient(0%, 50%, 100%);
+    @include habillage-texte();
+  }
+}

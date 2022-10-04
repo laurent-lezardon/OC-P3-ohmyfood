@@ -11,6 +11,10 @@ footer {
     }
     a {
         color: inherit;
+        transition: font-size 0.3s ease-in;
+        &:hover {
+            font-size: larger;
+        }
     }
     li {
         font-size: 1.4rem;

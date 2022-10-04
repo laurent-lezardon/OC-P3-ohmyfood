@@ -13,4 +13,10 @@ $col-footer:#353535;
 // box-shadow
 
 $box-shadow: 0 5px 10px rgb(194, 192, 192);
+$hover-scale:1.01;
+
+@mixin hover-card {
+    box-shadow: 0 7px 7px 0 rgb(141, 141, 141);
+    transform: scale($hover-scale);
+}
 
