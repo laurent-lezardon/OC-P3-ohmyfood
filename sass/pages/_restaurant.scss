@@ -65,7 +65,7 @@
 // ----- paramètres --------------
 $anim-duration: 0.3s;
 $anim-delai: 0.3s;
-$anim-max-childs: 4;
+$anim-max-childs: 5;
 
 // -------- generation des délais animations
 @for $i from 2 through $anim-max-childs {

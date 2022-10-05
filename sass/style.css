@@ -581,6 +581,11 @@ header a {
           animation: plat-apparition 0.3s ease-in 1.2s forwards;
 }
 
+.menu__categorie .plat-card-box:nth-child(5) {
+  -webkit-animation: plat-apparition 0.3s ease-in 1.5s forwards;
+          animation: plat-apparition 0.3s ease-in 1.5s forwards;
+}
+
 @-webkit-keyframes plat-apparition {
   0% {
     opacity: 0;
