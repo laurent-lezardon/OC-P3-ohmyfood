@@ -1,0 +1,62 @@
+// ============= apparition décalée des plats ===============
+
+// ----- paramètres --------------
+
+$loader-delai: 0.06s;
+$loader-childs: 8;
+
+// -------- generation des délais animations
+@for $i from 1 through $loader-childs {
+    .loader-container span:nth-child(#{$i}) {
+        animation-delay: $i*$loader-delai;
+  }
+}
+
+// ================ style =====================================
+.loader-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+    opacity: 1;
+    z-index: +2;
+    animation: disparition 0.5s ease-out 2.5s 1 forwards;
+}
+
+
+.loader-container span {
+    font-family: shrikhand;
+    color: $col-primary;
+    font-size: calc(100vw/11);
+    animation: loader-color 0.8s ease-in-out forwards;
+    animation-iteration-count: 3;
+}
+
+// ========== keyframes ==========================
+// --------------- loader ohmyfood ------------
+@keyframes loader-color {
+    0% {
+        color: $col-primary;
+    }
+    100% {
+        color: $col-secundary;
+        letter-spacing: 2px;
+    }
+}
+// ----------- disparition du loader -------------------
+@keyframes disparition {
+    0% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0,8;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: -2;
+    }
+}

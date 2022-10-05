@@ -132,6 +132,115 @@ h3 {
   font-weight: bold;
 }
 
+.loader-container span:nth-child(1) {
+  -webkit-animation-delay: 0.06s;
+          animation-delay: 0.06s;
+}
+
+.loader-container span:nth-child(2) {
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+}
+
+.loader-container span:nth-child(3) {
+  -webkit-animation-delay: 0.18s;
+          animation-delay: 0.18s;
+}
+
+.loader-container span:nth-child(4) {
+  -webkit-animation-delay: 0.24s;
+          animation-delay: 0.24s;
+}
+
+.loader-container span:nth-child(5) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.loader-container span:nth-child(6) {
+  -webkit-animation-delay: 0.36s;
+          animation-delay: 0.36s;
+}
+
+.loader-container span:nth-child(7) {
+  -webkit-animation-delay: 0.42s;
+          animation-delay: 0.42s;
+}
+
+.loader-container span:nth-child(8) {
+  -webkit-animation-delay: 0.48s;
+          animation-delay: 0.48s;
+}
+
+.loader-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
+  opacity: 1;
+  z-index: 2;
+  -webkit-animation: disparition 0.5s ease-out 2.5s 1 forwards;
+          animation: disparition 0.5s ease-out 2.5s 1 forwards;
+}
+
+.loader-container span {
+  font-family: shrikhand;
+  color: #9356dc;
+  font-size: 9.0909090909vw;
+  -webkit-animation: loader-color 0.8s ease-in-out forwards;
+          animation: loader-color 0.8s ease-in-out forwards;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+@-webkit-keyframes loader-color {
+  0% {
+    color: #9356dc;
+  }
+  100% {
+    color: #ff79da;
+    letter-spacing: 2px;
+  }
+}
+
+@keyframes loader-color {
+  0% {
+    color: #9356dc;
+  }
+  100% {
+    color: #ff79da;
+    letter-spacing: 2px;
+  }
+}
+@-webkit-keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0, 8;
+    z-index: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+@keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0, 8;
+    z-index: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
 .bouton {
   display: inline-block;
   box-shadow: 0 5px 10px rgb(194, 192, 192);
