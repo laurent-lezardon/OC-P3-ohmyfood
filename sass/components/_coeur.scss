@@ -15,6 +15,12 @@
 
 }
 
+//---------- variable - durée remplissage du coeur -----------
+$heart-filling-duration: 0.12s;
+
+
+
+
 // ========== style coeurs 
 .coeur {
   font-size: 3rem;
@@ -22,16 +28,14 @@
 
   & span:first-child {
     background-color: transparent;
-    position: relative;
-    // @include habillage-texte();
-    background: transparent;
-    // transition: all 0.3s;
+    position: relative;    
+    background: transparent;    
     font-size: 3rem;
     opacity: 0;
     &:hover {
       opacity: 1;
       z-index: 2;
-      animation: heart-filling 0.2s ease-in forwards;
+      animation: heart-filling $heart-filling-duration ease-in forwards;
     }
   }
 // ----- style du coeur qui disparait au hover
