@@ -178,7 +178,7 @@ h3 {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: #353535;
   align-items: center;
   opacity: 1;
   z-index: 2;
@@ -387,7 +387,8 @@ h3 {
   border-radius: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 5px 10px rgb(194, 192, 192);
-  max-width: 70rem;
+  max-width: 40rem;
+  min-width: 27rem;
   overflow: hidden;
   color: black;
   transition: all 0.3s ease-out;
@@ -610,6 +611,10 @@ header a {
   font-size: 1.6rem;
 }
 
+.aside-restau-display {
+  width: 100%;
+}
+
 .fonctionnement {
   padding-right: 5%;
   padding-left: 5%;
@@ -748,6 +753,72 @@ footer i {
 }
 
 /* ============ MEDIA QUERIES =======================*/
-/* ============ Breakpoint 1  > 768px  =======================*/
+/* ============ Breakpoint 1  > 768px  - Format Tablettes =======================*/
+@media screen and (min-width: 769px) {
+  .aside-restau-display {
+    display: flex;
+  }
+  .fonctionnement {
+    width: 50%;
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+  .fonctionnement h2 {
+    padding-top: 2rem;
+  }
+  .restaurants {
+    width: 50%;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 2rem;
+    background-color: white;
+  }
+  .restaurants h2 {
+    padding-top: 3rem;
+  }
+  .restaurant-card__img {
+    height: 12rem;
+  }
+  .restaurant-card__img img {
+    transform: translateY(11%);
+  }
+  footer ul {
+    display: flex;
+  }
+  footer ul li {
+    width: 50%;
+  }
+}
 /* ============ MEDIA QUERIES =======================*/
-/* ============ Breakpoint 2  > 992px  =======================*//*# sourceMappingURL=style.css.map */
+/* ============ Breakpoint 2  > 992px  =======================*/
+@media screen and (min-width: 993px) {
+  p.logo {
+    font-size: 5rem;
+  }
+  .aside-restau-display {
+    display: block;
+  }
+  .fonctionnement {
+    width: 100%;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  .etapes-cards {
+    display: flex;
+  }
+  .restaurants {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  .restaurants-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurant-card__img {
+    transform: translateY(0%);
+    height: 16rem;
+  }
+}/*# sourceMappingURL=style.css.map */

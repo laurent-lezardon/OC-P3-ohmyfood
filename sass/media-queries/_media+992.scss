@@ -2,4 +2,46 @@
 
 /* ============ Breakpoint 2  > 992px  =======================*/
 
-@media screen and (min-width: 993px) {}
+$lateral-pading: 2%;
+
+@media screen and (min-width: 993px) {
+    p.logo {
+        font-size: 5rem;
+    }
+
+    .aside-restau-display {
+        display: block;
+    }
+
+    .fonctionnement {
+        width: 100%;
+        @include lateral-margin();
+    }
+
+    .etapes-cards {
+
+        display: flex;
+    }
+
+    .restaurants {
+        width: 100%;
+        background-color: $col-section;
+        @include lateral-margin();
+    }
+
+    .restaurants-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .restaurant-card {
+        
+        &__img {
+            transform: translateY(0%);
+            height: 16rem;
+        }
+    }
+
+}

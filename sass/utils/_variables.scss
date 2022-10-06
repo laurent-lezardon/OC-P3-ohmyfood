@@ -1,20 +1,22 @@
 // définition des couleurs
 
-$col-primary:#9356dc;
+$col-primary:#9356dc; 
 $col-secundary:#ff79da;
 $col-tertiary:#99e2d0;
-$col-location-bottom:#eaeaea;
-$col-location-top:#cfcfcf;
-$col-section: #f6f6f6;
-$col-home-icons:#7e7e7e;
-$col-nouveau-txt:#008766;
-$col-footer:#353535;
+$col-location-bottom:#eaeaea; //couleur bas du bloc 'localisation'
+$col-location-top:#cfcfcf; // couleur haut du bloc 'localisation'
+$col-section: #f6f6f6; // fond gris des sections
+$col-home-icons:#7e7e7e; // couleur des icones bloc fonctionnement
+$col-nouveau-txt:#008766; // page accueil couleur text nouveau sur les restaurants
+$col-footer:#353535; // couleur du footer
 
-// box-shadow
-
+// box-shadow générique
 $box-shadow: 0 5px 10px rgb(194, 192, 192);
+
+// modification des tailles sur les 'hover'
 $hover-scale:1.01;
 
+// comportement générique sur les 'hover'
 @mixin hover-card {
     box-shadow: 0 7px 7px 0 rgb(141, 141, 141);
     transform: scale($hover-scale);

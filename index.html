@@ -13,9 +13,11 @@
 </head>
 
 <body>
-  <div class="loader-container">
+  <!-- =========== Loader ================= -->
+  <!-- <div class="loader-container">
     <span>o</span><span>h</span><span>m</span><span>y</span><span>f</span><span>o</span><span>o</span><span>d</span>
-</div>
+  </div> -->
+  <!-- =========== header ================= -->
   <header>
     <p class="logo">ohmyfood</p>
   </header>
@@ -37,135 +39,137 @@
       </div>
     </div>
   </section>
-  <!-- =========== section fonctionnement ================= -->
-  <section class="fonctionnement">
-    <h2>Fonctionnement</h2>
-    <div class="etapes-cards">
-      <div class="etape-card">
-        <div class="etape-content">
-          <div class="etape-content__icone">
-            <i class="fa-solid fa-mobile-screen-button"></i>
+  <div class="aside-restau-display">
+    <!-- =========== section fonctionnement ================= -->
+    <aside class="fonctionnement">
+      <h2>Fonctionnement</h2>
+      <div class="etapes-cards">
+        <div class="etape-card">
+          <div class="etape-content">
+            <div class="etape-content__icone">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <p>Choisissez un restaurant</p>
           </div>
-          <p>Choisissez un restaurant</p>
+          <span>&#10122;</span>
         </div>
-        <span>&#10122;</span>
-      </div>
-      <div class="etape-card">
-        <div class="etape-content">
-          <div class="etape-content__icone">
-            <i class="fa-solid fa-list"></i>
+        <div class="etape-card">
+          <div class="etape-content">
+            <div class="etape-content__icone">
+              <i class="fa-solid fa-list"></i>
+            </div>
+            <p>Composez votre menu</p>
           </div>
-          <p>Composez votre menu</p>
+          <span>&#10123;</span>
         </div>
-        <span>&#10123;</span>
-      </div>
-      <div class="etape-card">
-        <div class="etape-content">
-          <div class="etape-content__icone">
-            <i class="fa-sharp fa-solid fa-store"></i>
+        <div class="etape-card">
+          <div class="etape-content">
+            <div class="etape-content__icone">
+              <i class="fa-sharp fa-solid fa-store"></i>
+            </div>
+            <p>Dégustez au restaurant</p>
           </div>
-          <p>Dégustez au restaurant</p>
+          <span>&#10124;</span>
         </div>
-        <span>&#10124;</span>
-      </div>
 
 
-    </div>
-  </section>
-  <!-- =========== section restaurant ================= -->
-  <section class="restaurants">
-    <h2 id="restaurants">Restaurants</h2>
+      </div>
+    </aside>
+    <!-- =========== section restaurant ================= -->
+    <section class="restaurants">
+      <h2 id="restaurants">Restaurants</h2>
 
-    <div class="restaurants-cards">
-      <a href="./pages/la_palette_du_gout.html">
-        <div class="restaurant-card restaurant-card--new">
-          <div class="restaurant-card__img">
-            <img srcset="
+      <div class="restaurants-cards">
+        <a href="./pages/la_palette_du_gout.html">
+          <div class="restaurant-card restaurant-card--new">
+            <div class="restaurant-card__img">
+              <img srcset="
                 ./assets/img/restaurants/desktop/jay-wennington-N_Y88TWmGwA-unsplash.jpg 1600w,
                 ./assets/img/restaurants/mobile/jay-wennington-N_Y88TWmGwA-unsplash-mobile.jpg  800w
               " sizes="(max-width: 900px) 800px, 1600px"
-              src="./assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-              alt="Restaurant la palette du goût">
-          </div>
-          <div class="restaurant-card__plaque">
-            <div class="restaurant-plaque__txt">
-              <h3>La palette du goût</h3>
-              <p>Ménilmontant</p>
+                src="./assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="Restaurant la palette du goût">
             </div>
-            <div class="coeur">
-              <span class="material-icons standard favorite ">favorite</span>
-              <span class="material-icons standard">favorite_border</span>
+            <div class="restaurant-card__plaque">
+              <div class="restaurant-plaque__txt">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+              </div>
+              <div class="coeur">
+                <span class="material-icons standard favorite ">favorite</span>
+                <span class="material-icons standard">favorite_border</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./pages/la_note_enchantee.html">
-        <div class="restaurant-card restaurant-card--new">
-          <div class="restaurant-card__img">
-            <img srcset="
+        </a>
+        <a href="./pages/la_note_enchantee.html">
+          <div class="restaurant-card restaurant-card--new">
+            <div class="restaurant-card__img">
+              <img srcset="
                 ./assets/img/restaurants/desktop/stil-u2Lp8tXIcjw-unsplash.jpg       1600w,
                 ./assets/img/restaurants/mobile/stil-u2Lp8tXIcjw-unsplash-mobile.jpg  800w
               " sizes="(max-width: 900px) 800px, 1600px" src="./assets/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-              alt="Restaurant la note enchantée">
-          </div>
-          <div class="restaurant-card__plaque">
-            <div class="restaurant-plaque__txt">
-              <h3>La note enchantée</h3>
-              <p>Charonne</p>
+                alt="Restaurant la note enchantée">
             </div>
-            <div class="coeur">
-              <span class="material-icons standard favorite ">favorite</span>
-              <span class="material-icons standard">favorite_border</span>
+            <div class="restaurant-card__plaque">
+              <div class="restaurant-plaque__txt">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </div>
+              <div class="coeur">
+                <span class="material-icons standard favorite ">favorite</span>
+                <span class="material-icons standard">favorite_border</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./pages/a_la_francaise.html">
-        <div class="restaurant-card ">
-          <div class="restaurant-card__img">
-            <img srcset="
+        </a>
+        <a href="./pages/a_la_francaise.html">
+          <div class="restaurant-card ">
+            <div class="restaurant-card__img">
+              <img srcset="
                 ./assets/img/restaurants/desktop/toa-heftiba-DQKerTsQwi0-unsplash.jpg       1600w,
                 ./assets/img/restaurants/mobile/toa-heftiba-DQKerTsQwi0-unsplash-mobile.jpg  800w
               " sizes="(max-width: 900px) 800px, 1600px"
-              src="./assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant à la francaise">
-          </div>
-          <div class="restaurant-card__plaque">
-            <div class="restaurant-plaque__txt">
-              <h3>&Agrave; la francaise</h3>
-              <p>Cité Rouge</p>
+                src="./assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant à la francaise">
             </div>
-            <div class="coeur">
-              <span class="material-icons standard favorite ">favorite</span>
-              <span class="material-icons standard">favorite_border</span>
+            <div class="restaurant-card__plaque">
+              <div class="restaurant-plaque__txt">
+                <h3>&Agrave; la francaise</h3>
+                <p>Cité Rouge</p>
+              </div>
+              <div class="coeur">
+                <span class="material-icons standard favorite ">favorite</span>
+                <span class="material-icons standard">favorite_border</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <!-- ******************** card restaurant - A le délice des sens ******************* -->
-      <a href="./pages/les_delices_du_sens.html">
-        <div class="restaurant-card ">
-          <div class="restaurant-card__img">
-            <img srcset="
+        </a>
+        <!-- ******************** card restaurant - A le délice des sens ******************* -->
+        <a href="./pages/les_delices_du_sens.html">
+          <div class="restaurant-card ">
+            <div class="restaurant-card__img">
+              <img srcset="
                 ./assets/img/restaurants/desktop/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg 1600w,
                 ./assets/img/restaurants/mobile/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-mobile.jpg  800w"
-              sizes="(max-width: 900px) 800px, 1600px"
-              src="./assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-              alt="Restaurant le délice des sens">
-          </div>
-          <div class="restaurant-card__plaque">
-            <div class="restaurant-plaque__txt">
-              <h3>Le délice des sens</h3>
-              <p>Folie-Méricourt</p>
+                sizes="(max-width: 900px) 800px, 1600px"
+                src="./assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Restaurant le délice des sens">
             </div>
-            <div class="coeur">
-              <span class="material-icons standard favorite ">favorite</span>
-              <span class="material-icons standard">favorite_border</span>
+            <div class="restaurant-card__plaque">
+              <div class="restaurant-plaque__txt">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
+              <div class="coeur">
+                <span class="material-icons standard favorite ">favorite</span>
+                <span class="material-icons standard">favorite_border</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-    </div>
-  </section>
+        </a>
+      </div>
+    </section>
+  </div>
   <!-- <div class="utils">
       <p>
         <i class="fa-solid fa-location-dot"></i>

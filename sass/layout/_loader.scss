@@ -19,7 +19,7 @@ $loader-childs: 8;
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: $col-footer;
     align-items: center;
     opacity: 1;
     z-index: +2;

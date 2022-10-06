@@ -4,13 +4,11 @@
 $tra-plate-width: 60px; //largeur finale du champ check
 $tra-plate-duration: 0.3s; //durée de l'animation
 $tra-plate-rotation: -360deg; // rotation initiale de l'icone check
-$width-plate-i: 25px;
+$width-plate-i: 25px; // diamètre du rond du check
 
 .plat-card-box {
   height: 7rem;
   width: 100%;
-  //   background-color: white;
-  //   border: solid 1px $col-primary;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: $box-shadow;
@@ -22,9 +20,7 @@ $width-plate-i: 25px;
 
 .plat-card {
   height: 100%;
-  // height: 7rem;;
   font-size: 1.6rem;
-  //   padding: 1.6rem 2.2rem 1.6rem 1rem ;
   display: flex;
   width: 100%;
   background-color: white;
@@ -58,12 +54,9 @@ $width-plate-i: 25px;
     h3,
     p {
       padding-right: 3rem;
-
-      // font-size: 1.6rem;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-
     }
   }
 
@@ -87,7 +80,6 @@ $width-plate-i: 25px;
   background-color: $col-tertiary;
   position: absolute;
   right: -$tra-plate-width;
-
   text-align: center;
 
   &__icone {
@@ -101,7 +93,6 @@ $width-plate-i: 25px;
     & i {
       height: $width-plate-i;
       width: $width-plate-i;
-
       border-radius: 50%;
       line-height: $width-plate-i;
       text-align: center;

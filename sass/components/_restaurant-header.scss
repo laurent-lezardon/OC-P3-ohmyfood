@@ -1,6 +1,6 @@
-.restaurant-header {
-    
-    
+// *********** Entète des pages restaurants (photo + nom du restaurant) ****
+
+.restaurant-header {   
     overflow: hidden;
     position: relative;
     img {
@@ -16,14 +16,12 @@
         border-radius: 3rem 3rem 0 0;
         padding: 2rem;
         h1 {
-            font-size: 2.8rem;
-            // text-transform: capitalize;
+            font-size: 2.8rem;            
             font-family: shrikhand, serif;
             font-weight: 400;
         }
         i {
-            font-size: 2.8rem;
-            
+            font-size: 2.8rem;           
             
         }
     }

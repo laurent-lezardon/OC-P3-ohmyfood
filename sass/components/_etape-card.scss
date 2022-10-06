@@ -1,7 +1,9 @@
-$col-etape-hover:#f5edff;
-$vignet-gap: 1rem;
+// ********** card de la section fonctionnement ****************
 
+$col-etape-hover: #f5edff; // couleur du hover sur la card
+$vignet-gap: 1rem; // décalage de la card en raison de la vignette du numéro d'étape
 
+//============== styles ====================================
 .etape-card {
   margin-left: $vignet-gap;
   margin-right: $vignet-gap;
@@ -13,31 +15,34 @@ $vignet-gap: 1rem;
   position: relative;
   width: calc(100% - $vignet-gap);
   transition: background-color 0.3s ease-in;
+
   &:hover {
     background-color: $col-etape-hover;
   }
-  
+
   .etape-content {
     display: flex;
+
     &__icone {
       width: 3rem;
       display: flex;
       justify-content: center;
     }
+
     & p {
       font-family: Roboto, sans-serif;
       font-size: 1.6rem;
       font-weight: 500;
       margin-left: 1rem;
     }
+
     & i {
-      
       font-size: 1.8rem;
       color: $col-home-icons;
       transition: color 0.3s ease-in;
     }
-    
   }
+
   & span {
     position: absolute;
     font-size: 3rem;
@@ -46,6 +51,8 @@ $vignet-gap: 1rem;
     top: 2.5rem;
   }
 }
+
+// ----------- changement de couleur de l'icone sur le hover d'une card
 .etape-card:hover .etape-content i {
-  color:$col-primary;
+  color: $col-primary;
 }

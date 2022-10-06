@@ -1,5 +1,44 @@
 /* ============ MEDIA QUERIES =======================*/
 
-/* ============ Breakpoint 1  > 768px  =======================*/
+/* ============ Breakpoint 1  > 768px  - Format Tablettes =======================*/
+$lateral-pading: 4%;
+@media screen and (min-width: 769px) {
+    .aside-restau-display {
+        display: flex;
+        
+        
+    }
+    .fonctionnement {
+        
+        width: 50%;
+        @include lateral-margin();
+        h2 {
+            padding-top: 2rem;
+        }
+    }
+    .restaurants {
+        width: 50%;
+        @include lateral-margin();
+        padding-bottom: 2rem;
+        background-color: white;
+        h2 {
+            padding-top: 3rem;
 
-@media screen and (min-width: 769px) {}
+        }
+    }
+    .restaurant-card__img {
+        height: 12rem;
+        
+        img  {
+            transform: translateY(11%);
+
+        }
+    }
+    footer ul {
+        display: flex;
+        li {
+            width: 50%;
+        }
+    }
+
+}

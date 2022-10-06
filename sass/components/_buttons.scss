@@ -1,14 +1,15 @@
 
 // =========== variables et mixin button
 //------ eclaircissement des couleur du gradient pour le hover
-$hov-lighten-percent:5;
-$hov-button-grad1: lighten($col-primary,$hov-lighten-percent);
-$hov-button-grad2: lighten($col-secundary, $hov-lighten-percent);
+$hov-lighten-percent:5; // pourcentage de l'éclaircissement
+$hov-button-grad1: lighten($col-primary,$hov-lighten-percent); //couleur 1 du gradient pour le hover
+$hov-button-grad2: lighten($col-secundary, $hov-lighten-percent); //couleur 2 du gradient pour le hover
 
 //------ padding latéraux -----------------------
 $padding-explorer: 0 2.3rem;
 $padding-commander: 0 5rem;
-// mixin gradient
+
+// mixin gradient pour les boutons - aspect générique et hover
 @mixin grad-button($col1,$col2) {
 
   background: linear-gradient(356deg,

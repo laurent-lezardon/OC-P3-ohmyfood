@@ -1,13 +1,16 @@
+// ========== variables ===================
 
+$wmax-restaurant-card:40rem; // largeur max d'une card
+$wmin-restaurant-card:27rem; // largeur max d'une card
 
-$width-restaurant-card:70rem;
 
 
 .restaurant-card {
   border-radius: 2rem;
   margin-bottom: 2rem;
   box-shadow: $box-shadow;
-  max-width: $width-restaurant-card;
+  max-width: $wmax-restaurant-card;
+  min-width: $wmin-restaurant-card;
   overflow: hidden;
   color: black;
   transition: all 0.3s ease-out;

@@ -1,29 +1,25 @@
 // *************** chargement base et utilitaires
 
-@import "./base/reset";
-@import "./utils/variables";
+@import "./base/reset"; //reset scss
+@import "./utils/variables"; // variables globales
 @import "./utils/_mixins";
-@import "./base/typography";
+@import "./base/typography"; // polices et règles générales typographiques
 
 // *************** chargement des composants (cards, bouton, coeur)
 
-@import "./layout/loader";
-@import "./components/buttons";
-@import "./components/coeur";
-@import "./components/etape-card";
-@import "./components/restaurant-card";
-@import "./components/restaurant-header";
-@import "./components/plat-card";
-@import "./layout/header";
-@import "./pages/home";
-@import "./pages/restaurant";
-@import "./layout/footer";
+@import "./layout/loader"; //loader
+@import "./components/buttons"; // composant bouton (Explorez, commander)
+@import "./components/coeur"; // coeur des card restaurant toutes pages
+@import "./components/etape-card"; // page d'accueil - etapes section fonctionnement
+@import "./components/restaurant-card"; // page d'accueil - card restaurants
+@import "./components/restaurant-header"; // page restaurant - entète
+@import "./components/plat-card"; // page restaurant - card plat
+@import "./layout/header"; // header commun
+@import "./pages/home"; // page d'accueil
+@import "./pages/restaurant"; // page restaurant
+@import "./layout/footer"; // footer comun
 
 // *************** chargement media-queries
 
 @import "./media-queries/media+768";
 @import "./media-queries/media+992"
-
-
-
-
