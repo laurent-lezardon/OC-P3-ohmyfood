@@ -788,6 +788,33 @@ footer i {
   footer ul li {
     width: 50%;
   }
+  .main-restaurant {
+    display: flex;
+    background-color: #f6f6f6;
+  }
+  .header-restaurant-display {
+    width: 50%;
+    padding: 3rem 3%;
+  }
+  .restaurant-header {
+    width: 100%;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .restaurant-header__content {
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+    height: 6rem;
+    border-radius: 0;
+  }
+  .menu__display {
+    width: 50%;
+    padding: 3rem 3%;
+  }
 }
 /* ============ MEDIA QUERIES =======================*/
 /* ============ Breakpoint 2  > 992px  =======================*/
@@ -820,5 +847,45 @@ footer i {
   .restaurant-card__img {
     transform: translateY(0%);
     height: 16rem;
+  }
+  .main-restaurant {
+    display: block;
+    background-color: #f6f6f6;
+  }
+  .header-restaurant-display {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  .restaurant-header {
+    max-width: 60%;
+    background-color: #f6f6f6;
+    margin: auto 3%;
+    border-radius: 15px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .restaurant-header__img {
+    height: 20rem;
+  }
+  .restaurant-header__content {
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+    height: 6rem;
+    border-radius: 0;
+  }
+  .menu__display {
+    width: 100%;
+    padding: 3rem 3%;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .plat-card-box {
+    max-width: 32rem;
   }
 }/*# sourceMappingURL=style.css.map */

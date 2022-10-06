@@ -8,6 +8,7 @@ $lateral-pading: 2%;
     p.logo {
         font-size: 5rem;
     }
+    // --------------- home page ------------------
 
     .aside-restau-display {
         display: block;
@@ -42,6 +43,54 @@ $lateral-pading: 2%;
             transform: translateY(0%);
             height: 16rem;
         }
+    }
+    // --------------- restaurant page ------------------
+
+    .main-restaurant {
+        display: block;
+        background-color: $col-section;
+    }
+    .header-restaurant-display {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 2rem;
+        
+
+        }
+    .restaurant-header {
+        max-width: 60%;
+        
+        background-color: $col-section;
+        margin: auto 3%;
+        border-radius: 15px;
+        height: fit-content;
+        // position: fixed;
+        &__img {
+            height: 20rem;
+        }
+        
+        &__content {
+            border-radius: 15px;
+            background-color: white;
+            width: 100%;
+            // top:-1px;
+            height: 6rem;
+            border-radius: 0;
+            
+        }
+    }
+    .menu__display {
+        width: 100%;
+        padding: 3rem 3%;
+
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .plat-card-box {
+        max-width: 32rem;
     }
 
 }
