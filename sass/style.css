@@ -110,7 +110,7 @@ h1,
 h2 {
   font-family: Roboto, sans-serif;
   font-size: 2.4rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 p {
@@ -257,7 +257,7 @@ h3 {
   height: 100%;
   color: white;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: normal;
 }
 .bouton--commander {
   padding: 0 5rem;
@@ -342,7 +342,7 @@ h3 {
   margin-right: 1rem;
   background-color: #f6f6f6;
   box-shadow: 0 5px 10px rgb(194, 192, 192);
-  border-radius: 3rem;
+  border-radius: 2.5rem;
   padding: 3rem 2rem 3rem 3rem;
   margin-bottom: 2rem;
   position: relative;
@@ -412,7 +412,7 @@ h3 {
   height: 3rem;
   width: 8rem;
   background-color: #99e2d0;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 .restaurant-card__img {
   width: 100%;
@@ -441,12 +441,12 @@ h3 {
   justify-content: space-between;
 }
 .restaurant-plaque__txt h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: Roboto, sans-serif;
   font-weight: bold;
 }
 .restaurant-plaque__txt p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: Roboto, sans-serif;
 }
 
@@ -454,13 +454,19 @@ h3 {
   overflow: hidden;
   position: relative;
 }
+.restaurant-header__img {
+  height: 30rem;
+}
 .restaurant-header img {
-  width: 100%;
+  width: auto;
+  height: 100%;
+  transform: translate(-15%, 15%);
 }
 .restaurant-header__content {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   position: absolute;
   bottom: 0;
   background-color: #f6f6f6;
@@ -468,7 +474,7 @@ h3 {
   padding: 2rem;
 }
 .restaurant-header__content h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-family: shrikhand, serif;
   font-weight: 400;
 }
@@ -476,6 +482,14 @@ h3 {
   font-size: 2.8rem;
 }
 
+/* ============ Breakpoint 2  > 440px  =======================*/
+@media screen and (min-width: 440px) {
+  .restaurant-header img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-10%);
+  }
+}
 .plat-card-box {
   height: 7rem;
   width: 100%;
@@ -601,10 +615,11 @@ header a {
   align-items: center;
   background-color: #f6f6f6;
   padding: 4rem;
+  padding-bottom: 5rem;
 }
 .accueil__center h1,
 .accueil__center p {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
 }
 .accueil__center p {
@@ -657,6 +672,7 @@ header a {
 
 .menu__display {
   padding: 1rem;
+  padding-bottom: 0;
   background-color: #f6f6f6;
 }
 
@@ -685,7 +701,7 @@ header a {
 }
 .menu__display-button {
   display: flex;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
 }
 
 .menu__categorie .plat-card-box:nth-child(2) {
@@ -848,9 +864,15 @@ footer i {
     transform: translateY(0%);
     height: 16rem;
   }
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   .main-restaurant {
     display: block;
     background-color: #f6f6f6;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   .header-restaurant-display {
     display: flex;
@@ -870,7 +892,11 @@ footer i {
   .restaurant-header__img {
     height: 20rem;
   }
+  .restaurant-header__img img {
+    transform: translateY(-45%);
+  }
   .restaurant-header__content {
+    justify-content: space-around;
     border-radius: 15px;
     background-color: white;
     width: 100%;

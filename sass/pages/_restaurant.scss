@@ -31,6 +31,7 @@
 
 .menu__display {
   padding: 1rem;
+  padding-bottom: 0;
   background-color: $col-section;
 }
 
@@ -70,7 +71,7 @@
   // ----------- Bouton commander positionnement - voir composant 'button'
   &__display-button {
     display: flex;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
   }
 }
 

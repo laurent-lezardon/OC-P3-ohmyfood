@@ -7,7 +7,7 @@ $lateral-pading: 5%;
 }
 
 
-
+// =========== localisation ====================
 
 .localisation {
   display: flex;
@@ -19,9 +19,7 @@ $lateral-pading: 5%;
       $col-location-bottom 80%,
       $col-location-top 100%);
   height: 5rem;
-
   i {
-
     font-size: 1.6rem;
     margin-right: 1.8rem;
   }
@@ -30,11 +28,10 @@ $lateral-pading: 5%;
     font-family: Roboto, sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
-
-
   }
 }
 
+// =========== localisation ====================
 .accueil__center {
   display: flex;
   flex-direction: column;
@@ -42,10 +39,11 @@ $lateral-pading: 5%;
   align-items: center;
   background-color: $col-section;
   padding: 4rem;
+  padding-bottom: 5rem;
 
   h1,
   p {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     text-align: center;
   }
 

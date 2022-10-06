@@ -46,9 +46,16 @@ $lateral-pading: 2%;
     }
     // --------------- restaurant page ------------------
 
+    body {
+
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .main-restaurant {
         display: block;
         background-color: $col-section;
+        max-width: 1200px;
+        margin: 0 auto;
     }
     .header-restaurant-display {
         display: flex;
@@ -59,8 +66,7 @@ $lateral-pading: 2%;
 
         }
     .restaurant-header {
-        max-width: 60%;
-        
+        max-width: 60%;        
         background-color: $col-section;
         margin: auto 3%;
         border-radius: 15px;
@@ -68,9 +74,13 @@ $lateral-pading: 2%;
         // position: fixed;
         &__img {
             height: 20rem;
+            img {
+                transform: translateY(-45%);
+            }
         }
         
         &__content {
+            justify-content: space-around;
             border-radius: 15px;
             background-color: white;
             width: 100%;
