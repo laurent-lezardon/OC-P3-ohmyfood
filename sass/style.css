@@ -182,8 +182,8 @@ h3 {
   align-items: center;
   opacity: 1;
   z-index: 2;
-  -webkit-animation: disparition 0.5s ease-out 2.5s 1 forwards;
-          animation: disparition 0.5s ease-out 2.5s 1 forwards;
+  -webkit-animation: disparition 0.5s ease-in 2s forwards;
+          animation: disparition 0.5s ease-in 2s forwards;
 }
 
 .loader-container span {
@@ -349,6 +349,9 @@ h3 {
   width: calc(100% - 1rem);
   transition: background-color 0.3s ease-in;
 }
+.etape-card:last-child {
+  margin-bottom: 6.5rem;
+}
 .etape-card:hover {
   background-color: #f5edff;
 }
@@ -387,8 +390,8 @@ h3 {
   border-radius: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 5px 10px rgb(194, 192, 192);
-  max-width: 40rem;
-  min-width: 27rem;
+  max-width: none;
+  min-width: 12px;
   overflow: hidden;
   color: black;
   transition: all 0.3s ease-out;
@@ -450,6 +453,13 @@ h3 {
   font-family: Roboto, sans-serif;
 }
 
+/* ============ Breakpoint images  > 330px  =======================*/
+@media screen and (max-width: 330px) {
+  .restaurant-card img {
+    width: auto;
+    height: 100%;
+  }
+}
 .restaurant-header {
   overflow: hidden;
   position: relative;
@@ -458,9 +468,8 @@ h3 {
   height: 30rem;
 }
 .restaurant-header img {
-  width: auto;
-  height: 100%;
-  transform: translate(-15%, 15%);
+  width: 100%;
+  height: auto;
 }
 .restaurant-header__content {
   width: 100%;
@@ -483,10 +492,10 @@ h3 {
 }
 
 /* ============ Breakpoint 2  > 440px  =======================*/
-@media screen and (min-width: 440px) {
+@media screen and (max-width: 440px) {
   .restaurant-header img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     transform: translateY(-10%);
   }
 }
@@ -509,7 +518,7 @@ h3 {
   width: 100%;
   background-color: white;
   position: relative;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
 .plat-card__display {
@@ -547,15 +556,16 @@ h3 {
   font-size: 1.4rem;
 }
 .plat-card:hover {
-  width: calc(100% - 60px);
+  width: calc(100% - 7rem);
+  cursor: pointer;
 }
 
 .box-check {
-  width: 60px;
+  width: 7rem;
   height: 100%;
   background-color: #99e2d0;
   position: absolute;
-  right: -60px;
+  right: -7rem;
   text-align: center;
 }
 .box-check__icone {
@@ -574,7 +584,7 @@ h3 {
   text-align: center;
   transform: rotate(-360deg);
   transition-duration: 0.3s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
 }
 
 .plat-card:hover .box-check__icone i {
@@ -654,7 +664,7 @@ header a {
 }
 .retour-accueil a {
   position: absolute;
-  top: 0;
+  top: 25%;
   left: 1rem;
   font-size: 2rem;
   display: inline-block;
@@ -705,23 +715,23 @@ header a {
 }
 
 .menu__categorie .plat-card-box:nth-child(2) {
-  -webkit-animation: plat-apparition 0.3s ease-in 0.6s forwards;
-          animation: plat-apparition 0.3s ease-in 0.6s forwards;
+  -webkit-animation: plat-apparition 0.3s ease-out 0.3s forwards;
+          animation: plat-apparition 0.3s ease-out 0.3s forwards;
 }
 
 .menu__categorie .plat-card-box:nth-child(3) {
-  -webkit-animation: plat-apparition 0.3s ease-in 0.9s forwards;
-          animation: plat-apparition 0.3s ease-in 0.9s forwards;
+  -webkit-animation: plat-apparition 0.3s ease-out 0.45s forwards;
+          animation: plat-apparition 0.3s ease-out 0.45s forwards;
 }
 
 .menu__categorie .plat-card-box:nth-child(4) {
-  -webkit-animation: plat-apparition 0.3s ease-in 1.2s forwards;
-          animation: plat-apparition 0.3s ease-in 1.2s forwards;
+  -webkit-animation: plat-apparition 0.3s ease-out 0.6s forwards;
+          animation: plat-apparition 0.3s ease-out 0.6s forwards;
 }
 
 .menu__categorie .plat-card-box:nth-child(5) {
-  -webkit-animation: plat-apparition 0.3s ease-in 1.5s forwards;
-          animation: plat-apparition 0.3s ease-in 1.5s forwards;
+  -webkit-animation: plat-apparition 0.3s ease-out 0.75s forwards;
+          animation: plat-apparition 0.3s ease-out 0.75s forwards;
 }
 
 @-webkit-keyframes plat-apparition {
@@ -795,9 +805,6 @@ footer i {
   .restaurant-card__img {
     height: 12rem;
   }
-  .restaurant-card__img img {
-    transform: translateY(11%);
-  }
   footer ul {
     display: flex;
   }
@@ -815,6 +822,7 @@ footer i {
   .restaurant-header {
     width: 100%;
     background-color: #f6f6f6;
+    max-height: 30rem;
     border-radius: 15px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -827,7 +835,12 @@ footer i {
     height: 6rem;
     border-radius: 0;
   }
-  .menu__display {
+  .restaurant-header img {
+    width: auto;
+    height: 100%;
+    transform: translateY(-10%);
+  }
+  .restaurant-header .menu__display {
     width: 50%;
     padding: 3rem 3%;
   }
@@ -837,6 +850,11 @@ footer i {
 @media screen and (min-width: 993px) {
   p.logo {
     font-size: 5rem;
+    margin: 1rem 0;
+  }
+  .aside-restau-display, .accueil, header, footer {
+    max-width: 1200px;
+    margin: auto;
   }
   .aside-restau-display {
     display: block;
@@ -849,6 +867,10 @@ footer i {
   .etapes-cards {
     display: flex;
   }
+  .etape-card {
+    margin: 0 3%;
+    margin-bottom: 6.5rem;
+  }
   .restaurants {
     width: 100%;
     background-color: #f6f6f6;
@@ -860,13 +882,16 @@ footer i {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .restaurant-card {
+    width: 26rem;
+  }
   .restaurant-card__img {
     transform: translateY(0%);
     height: 16rem;
   }
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
+  .restaurant-card__img img {
+    height: 100%;
+    width: auto;
   }
   .main-restaurant {
     display: block;
@@ -903,6 +928,11 @@ footer i {
     height: 6rem;
     border-radius: 0;
   }
+  .restaurant-header img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-10%);
+  }
   .menu__display {
     width: 100%;
     padding: 3rem 3%;
@@ -910,6 +940,13 @@ footer i {
   .menu {
     display: flex;
     justify-content: space-between;
+  }
+  .menu__categorie {
+    width: 33%;
+    padding: 1rem;
+  }
+  .menu__categorie:last-child {
+    margin-right: 5%;
   }
   .plat-card-box {
     max-width: 32rem;

@@ -1,8 +1,8 @@
 // ================= animation check plat
 
 
-$tra-plate-width: 60px; //largeur finale du champ check
-$tra-plate-duration: 0.3s; //durée de l'animation
+$tra-plate-width: 7rem; //largeur finale du champ check
+$tra-plate-duration: 0.2s; //durée de l'animation
 $tra-plate-rotation: -360deg; // rotation initiale de l'icone check
 $width-plate-i: 25px; // diamètre du rond du check
 
@@ -70,6 +70,7 @@ $width-plate-i: 25px; // diamètre du rond du check
 
   &:hover {
     width: calc(100% - $tra-plate-width);
+    cursor: pointer;
   }
 }
 
@@ -97,8 +98,8 @@ $width-plate-i: 25px; // diamètre du rond du check
       line-height: $width-plate-i;
       text-align: center;
       transform: rotate($tra-plate-rotation);
-      transition-duration: $tra-plate-duration;
-      transition-timing-function: ease-in;
+      transition-duration: calc($tra-plate-duration + 0.1s);
+      transition-timing-function: ease-out;
     }
   }
 }

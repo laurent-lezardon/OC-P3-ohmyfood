@@ -33,9 +33,7 @@ $lateral-pading: 4%;
     .restaurant-card__img {
         height: 12rem;
 
-        img {
-            transform: translateY(11%);
-        }
+        
     }
 
     footer ul {
@@ -45,6 +43,7 @@ $lateral-pading: 4%;
             width: 50%;
         }
     }
+
     // --------------- restaurant page ------------------
     .main-restaurant {
         display: flex;
@@ -55,14 +54,16 @@ $lateral-pading: 4%;
         width: 50%;
         padding: 3rem 3%;
     }
+
     .restaurant-header {
         width: 100%;
         background-color: $col-section;
-        
+        max-height: 30rem;
+
         border-radius: 15px;
         height: fit-content;
         // position: fixed;
-        
+
         &__content {
             border-radius: 15px;
             background-color: white;
@@ -70,13 +71,20 @@ $lateral-pading: 4%;
             // top:-1px;
             height: 6rem;
             border-radius: 0;
-            
+
         }
-    }
-    .menu__display {
-        width: 50%;
-        padding: 3rem 3%;
+
+        img {
+            width: auto;
+            height: 100%;
+            transform: translateY(-10%);
+        }
+
+        .menu__display {
+            width: 50%;
+            padding: 3rem 3%;
+
+        }
 
     }
-
 }

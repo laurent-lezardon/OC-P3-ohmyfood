@@ -7,9 +7,9 @@
         height: 30rem;
     }
     img {
-        width: auto;
-        height: 100%;
-        transform: translate(-15%, 15%);
+        width: 100%;
+        height: auto;
+        
     }
     &__content {
         width: 100%;
@@ -38,11 +38,11 @@
 
 
 
-@media screen and (min-width:440px) {
+@media screen and (max-width:440px) {
     .restaurant-header  {
         img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
         transform: translateY(-10%);
     }
 

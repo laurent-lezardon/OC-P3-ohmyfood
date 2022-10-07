@@ -15,6 +15,9 @@ $vignet-gap: 1rem; // décalage de la card en raison de la vignette du numéro d
   position: relative;
   width: calc(100% - $vignet-gap);
   transition: background-color 0.3s ease-in;
+  &:last-child {
+    margin-bottom: 6.5rem;
+  }
 
   &:hover {
     background-color: $col-etape-hover;

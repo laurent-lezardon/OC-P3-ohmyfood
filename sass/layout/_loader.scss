@@ -2,8 +2,8 @@
 
 // ----- paramètres --------------
 
-$loader-delai: 0.06s;
-$loader-childs: 8;
+$loader-delai: 0.06s; // delai d'animation entre chaque lettre
+$loader-childs: 8; // nombre de lettres a animer
 
 // -------- generation des délais animations
 @for $i from 1 through $loader-childs {
@@ -17,13 +17,14 @@ $loader-childs: 8;
     position: absolute;
     width: 100vw;
     height: 100vh;
+    
     display: flex;
     justify-content: center;
     background-color: $col-footer;
     align-items: center;
     opacity: 1;
     z-index: +2;
-    animation: disparition 0.5s ease-out 2.5s 1 forwards;
+    animation: disparition 0.5s ease-in 2s forwards;
 }
 
 

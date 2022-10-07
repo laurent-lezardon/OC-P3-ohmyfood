@@ -5,25 +5,21 @@
 
   a {
     position: absolute;
-    top: 0;
+    top: 25%;
     left: 1rem;
     font-size: 2rem;
     display: inline-block;
     height: 100%;
     width: 4rem;
     color: black;
-
     i {
       width: 6rem;
-      transition: font-size 0.2s ease-in;
+      transition: font-size 0.2s ease-in;      
     }
-
     &:hover i {
       font-size: larger;
     }
-
   }
-
 }
 
 
@@ -78,14 +74,14 @@
 // ============= apparition décalée des plats ===============
 
 // ----- paramètres --------------
-$anim-duration: 0.3s;
-$anim-delai: 0.3s;
-$anim-max-childs: 5;
+$anim-duration: 0.3s; // durée de l'animation (par plat)
+$anim-delai: 0.15s; // delai entre deux plats
+$anim-max-childs: 5; // nombre de plats maximum + 1
 
 // -------- generation des délais animations
 @for $i from 2 through $anim-max-childs {
   .menu__categorie .plat-card-box:nth-child(#{$i}) {
-    animation: plat-apparition $anim-duration ease-in $i*$anim-delai forwards;
+    animation: plat-apparition $anim-duration ease-out $i*$anim-delai forwards;
 
   }
 }
@@ -95,7 +91,6 @@ $anim-max-childs: 5;
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
