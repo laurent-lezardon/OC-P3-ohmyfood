@@ -1,29 +1,11 @@
-// ============= flèche du header ===============
-
-.retour-accueil {
-  position: relative;
-
-  a {
-    position: absolute;
-    top: 25%;
-    left: 1rem;
-    font-size: 2rem;
-    display: inline-block;
-    height: 100%;
-    width: 4rem;
-    color: black;
-    i {
-      width: 6rem;
-      transition: font-size 0.2s ease-in;      
-    }
-    &:hover i {
-      font-size: larger;
-    }
-  }
-}
+// *********** contenu ***************************
+// Style d'une page de type 'restaurant'
+// animation d'apparition décalée des plats
 
 
-// ============= menu display : menu + bouton 'commander' ===============
+
+
+// ============= menu__display : contient menu + bouton 'commander' ===============
 
 .menu__display {
   padding: 1rem;

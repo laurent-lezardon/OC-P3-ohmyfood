@@ -6,3 +6,7 @@
 '<p style='color:red'>
         Découvrez des restaurants d'exception, sélectionnés par nos soins.
  </p>'
+
+ // *********** contenu **************************
+
+

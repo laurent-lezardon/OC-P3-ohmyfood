@@ -1,4 +1,7 @@
-// padding - marging
+// *********** contenu **************************
+// Style de la page d'accueil
+
+// padding des sections
 $lateral-pading: 5%;
 
 @mixin lateral-margin {
@@ -7,7 +10,7 @@ $lateral-pading: 5%;
 }
 
 
-// =========== localisation ====================
+// =========== style du champ 'localisation' ====================
 
 .localisation {
   display: flex;
@@ -19,6 +22,7 @@ $lateral-pading: 5%;
       $col-location-bottom 80%,
       $col-location-top 100%);
   height: 5rem;
+
   i {
     font-size: 1.6rem;
     margin-right: 1.8rem;
@@ -31,7 +35,7 @@ $lateral-pading: 5%;
   }
 }
 
-// =========== localisation ====================
+// =========== style de la section d'accueil ====================
 .accueil__center {
   display: flex;
   flex-direction: column;
@@ -45,17 +49,10 @@ $lateral-pading: 5%;
   p {
     padding-bottom: 3rem;
     text-align: center;
-  }
-
-  p {
     font-size: 1.6rem;
   }
 }
-
-.aside-restau-display {
-  width: 100%;
-}
-
+// =========== style de la section 'fonctionnement' ====================
 .fonctionnement {
   @include lateral-margin();
 
@@ -66,6 +63,10 @@ $lateral-pading: 5%;
   }
 }
 
+// =========== style de la section restaurants ====================
+.aside-restau-display {
+  width: 100%;
+}
 
 .restaurants {
   background-color: $col-section;

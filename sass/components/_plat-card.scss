@@ -1,11 +1,17 @@
-// ================= animation check plat
+// *********** contenu **************************
+// card page de type restaurant contenant le plat, un commentaire et son prix
+// Animation de la card (transition)
 
 
-$tra-plate-width: 7rem; //largeur finale du champ check
+// ================= Variables ============
+
+$tra-plate-width: 7rem; //largeur finale du champ vert check
 $tra-plate-duration: 0.2s; //durée de l'animation
 $tra-plate-rotation: -360deg; // rotation initiale de l'icone check
 $width-plate-i: 25px; // diamètre du rond du check
 
+
+// ================ style ================
 .plat-card-box {
   height: 7rem;
   width: 100%;
@@ -69,6 +75,7 @@ $width-plate-i: 25px; // diamètre du rond du check
   }
 
   &:hover {
+    // la largeur de la card diminue de la largeur du 'check'
     width: calc(100% - $tra-plate-width);
     cursor: pointer;
   }
@@ -98,6 +105,7 @@ $width-plate-i: 25px; // diamètre du rond du check
       line-height: $width-plate-i;
       text-align: center;
       transform: rotate($tra-plate-rotation);
+      // petit alongement de la durée de la transition de rotation pour le visuel
       transition-duration: calc($tra-plate-duration + 0.1s);
       transition-timing-function: ease-out;
     }

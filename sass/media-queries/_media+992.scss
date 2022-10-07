@@ -1,3 +1,9 @@
+// *********** contenu **************************
+// Media queries pour portables et desktop :
+// - page d'accueil
+// - page type "restaurant"
+
+
 /* ============ MEDIA QUERIES =======================*/
 
 /* ============ Breakpoint 2  > 992px  =======================*/
@@ -85,7 +91,6 @@ $lateral-pading: 2%;
         margin: auto 3%;
         border-radius: 15px;
         height: fit-content;
-        // position: fixed;
         &__img {
             height: 20rem;
             img {
@@ -105,7 +110,7 @@ $lateral-pading: 2%;
         img {
             width: 100%;
             height: auto;
-            transform: translateY(-10%);
+            transform: translateY(-35%);
         }
     }
     .menu__display {
@@ -128,6 +133,7 @@ $lateral-pading: 2%;
     }
     .plat-card-box {
         max-width: 32rem;
+        width: 100%;
     }
 
 }

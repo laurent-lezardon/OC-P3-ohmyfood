@@ -1,3 +1,6 @@
+// *********** contenu **************************
+// Fichier scss principal - ordre d'appel des dépendances
+
 // *************** chargement base et utilitaires
 
 @import "./base/reset"; //reset scss
@@ -20,5 +23,5 @@
 
 // *************** chargement media-queries
 
-@import "./media-queries/media+768";
-@import "./media-queries/media+992"
+@import "./media-queries/media+768"; // mobile first - breakpoint 1 (tablettes)
+@import "./media-queries/media+992"; // mobile first - breakpoint 2 (desktop)

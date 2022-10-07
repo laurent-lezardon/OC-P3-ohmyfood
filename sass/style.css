@@ -391,7 +391,7 @@ h3 {
   margin-bottom: 2rem;
   box-shadow: 0 5px 10px rgb(194, 192, 192);
   max-width: none;
-  min-width: 12px;
+  min-width: 0;
   overflow: hidden;
   color: black;
   transition: all 0.3s ease-out;
@@ -458,6 +458,7 @@ h3 {
   .restaurant-card img {
     width: auto;
     height: 100%;
+    transform: translateX(-10%);
   }
 }
 .restaurant-header {
@@ -600,6 +601,27 @@ header a {
   display: none;
 }
 
+.retour-accueil {
+  position: relative;
+}
+.retour-accueil a {
+  position: absolute;
+  top: 25%;
+  left: 1rem;
+  font-size: 2rem;
+  display: inline-block;
+  height: 100%;
+  width: 4rem;
+  color: black;
+}
+.retour-accueil a i {
+  width: 6rem;
+  transition: font-size 0.2s ease-in;
+}
+.retour-accueil a:hover i {
+  font-size: larger;
+}
+
 .localisation {
   display: flex;
   justify-content: center;
@@ -631,13 +653,7 @@ header a {
 .accueil__center p {
   padding-bottom: 3rem;
   text-align: center;
-}
-.accueil__center p {
   font-size: 1.6rem;
-}
-
-.aside-restau-display {
-  width: 100%;
 }
 
 .fonctionnement {
@@ -649,6 +665,10 @@ header a {
   padding-bottom: 3rem;
 }
 
+.aside-restau-display {
+  width: 100%;
+}
+
 .restaurants {
   background-color: #f6f6f6;
   padding-right: 5%;
@@ -657,27 +677,6 @@ header a {
 }
 .restaurants h2 {
   padding: 6rem 0 2rem 0;
-}
-
-.retour-accueil {
-  position: relative;
-}
-.retour-accueil a {
-  position: absolute;
-  top: 25%;
-  left: 1rem;
-  font-size: 2rem;
-  display: inline-block;
-  height: 100%;
-  width: 4rem;
-  color: black;
-}
-.retour-accueil a i {
-  width: 6rem;
-  transition: font-size 0.2s ease-in;
-}
-.retour-accueil a:hover i {
-  font-size: larger;
 }
 
 .menu__display {
@@ -814,6 +813,7 @@ footer i {
   .main-restaurant {
     display: flex;
     background-color: #f6f6f6;
+    justify-content: space-around;
   }
   .header-restaurant-display {
     width: 50%;
@@ -843,6 +843,9 @@ footer i {
   .restaurant-header .menu__display {
     width: 50%;
     padding: 3rem 3%;
+  }
+  .plat-card-box {
+    max-width: 95%;
   }
 }
 /* ============ MEDIA QUERIES =======================*/
@@ -931,7 +934,7 @@ footer i {
   .restaurant-header img {
     width: 100%;
     height: auto;
-    transform: translateY(-10%);
+    transform: translateY(-35%);
   }
   .menu__display {
     width: 100%;
@@ -950,5 +953,6 @@ footer i {
   }
   .plat-card-box {
     max-width: 32rem;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

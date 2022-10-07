@@ -1,8 +1,8 @@
-// ========== variables ===================
-
-$wmax-restaurant-card: none; // largeur max d'une card
-$wmin-restaurant-card: 12px; // largeur min d'une card
-
+// *********** contenu **************************
+// card restaurant de la page d'accueil
+// Les styles de bases des titres, paragraphes .......
+$wmax-restaurant-card:none;
+$wmin-restaurant-card:0;
 
 
 .restaurant-card {
@@ -20,6 +20,7 @@ $wmin-restaurant-card: 12px; // largeur min d'une card
   }
 
   &--new {
+    // encart 'Nouveau' sur les cards 'restaurant'
     position: relative;
 
     &::after {
@@ -95,7 +96,7 @@ $wmin-restaurant-card: 12px; // largeur min d'une card
     img {
       width: auto;
       height: 100%;
-      // transform: translateY(-10%);
+      transform: translateX(-10%);
     }
 
   }

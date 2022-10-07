@@ -1,3 +1,12 @@
+// *********** contenu **************************
+// Media queries pour tablettes :
+// - page d'accueil
+// - page type "restaurant"
+
+
+
+
+
 /* ============ MEDIA QUERIES =======================*/
 
 /* ============ Breakpoint 1  > 768px  - Format Tablettes =======================*/
@@ -33,7 +42,7 @@ $lateral-pading: 4%;
     .restaurant-card__img {
         height: 12rem;
 
-        
+
     }
 
     footer ul {
@@ -48,6 +57,7 @@ $lateral-pading: 4%;
     .main-restaurant {
         display: flex;
         background-color: $col-section;
+        justify-content: space-around;
     }
 
     .header-restaurant-display {
@@ -83,8 +93,12 @@ $lateral-pading: 4%;
         .menu__display {
             width: 50%;
             padding: 3rem 3%;
-
         }
-
     }
+
+    .plat-card-box {
+        max-width: 95%;
+    }
+
+    
 }
