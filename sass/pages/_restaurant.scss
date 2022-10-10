@@ -56,14 +56,15 @@
 // ============= apparition décalée des plats ===============
 
 // ----- paramètres --------------
-$anim-duration: 0.3s; // durée de l'animation (par plat)
-$anim-delai: 0.15s; // delai entre deux plats
+$anim-duration: 0.25s; // durée de l'animation (par plat)
+$anim-delai: 0.25s; // delai entre deux plats
 $anim-max-childs: 5; // nombre de plats maximum + 1
 
 // -------- generation des délais animations
 @for $i from 2 through $anim-max-childs {
   .menu__categorie .plat-card-box:nth-child(#{$i}) {
-    animation: plat-apparition $anim-duration ease-out $i*$anim-delai forwards;
+    $delai: $i - 1;
+    animation: plat-apparition $anim-duration ease-out $delai*$anim-delai forwards;
 
   }
 }

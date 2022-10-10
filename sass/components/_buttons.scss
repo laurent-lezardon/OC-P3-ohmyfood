@@ -9,7 +9,7 @@
 
 // =========== variables et mixin button
 //------ eclaircissement des couleur du gradient pour le hover
-$hov-lighten-percent:5; // pourcentage de l'éclaircissement
+$hov-lighten-percent:7; // pourcentage de l'éclaircissement
 $hov-button-grad1: lighten($col-primary,$hov-lighten-percent); //couleur 1 du gradient pour le hover
 $hov-button-grad2: lighten($col-secundary, $hov-lighten-percent); //couleur 2 du gradient pour le hover
 

@@ -26,7 +26,7 @@
 }
 
 //---------- variable - durée remplissage du coeur -----------
-$heart-filling-duration: 0.12s;
+$heart-filling-duration: 0.2s;
 
 
 
@@ -45,7 +45,7 @@ $heart-filling-duration: 0.12s;
     &:hover {
       opacity: 1;
       z-index: 2;
-      animation: heart-filling $heart-filling-duration ease-in forwards;
+      animation: heart-filling $heart-filling-duration ease-in-out forwards;
     }
   }
 // ----- style du coeur qui disparait au hover

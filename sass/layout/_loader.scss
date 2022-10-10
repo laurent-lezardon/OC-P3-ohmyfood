@@ -32,7 +32,7 @@ $loader-childs: 8; // nombre de lettres a animer
     align-items: center;
     opacity: 1;
     z-index: +2;
-    animation: disparition 0.5s ease-in 2s forwards;
+    animation: disparition 1.3s cubic-bezier(0.01, 0.49, 0.4, 1.07) 2s forwards;
 }
 
 
@@ -60,7 +60,7 @@ $loader-childs: 8; // nombre de lettres a animer
     0% {
         opacity: 1;
     }
-    60% {
+    20% {
         opacity: 0,8;
         z-index: 0;
     }

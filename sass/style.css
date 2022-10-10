@@ -182,8 +182,8 @@ h3 {
   align-items: center;
   opacity: 1;
   z-index: 2;
-  -webkit-animation: disparition 0.5s ease-in 2s forwards;
-          animation: disparition 0.5s ease-in 2s forwards;
+  -webkit-animation: disparition 1.3s cubic-bezier(0.01, 0.49, 0.4, 1.07) 2s forwards;
+          animation: disparition 1.3s cubic-bezier(0.01, 0.49, 0.4, 1.07) 2s forwards;
 }
 
 .loader-container span {
@@ -219,7 +219,7 @@ h3 {
   0% {
     opacity: 1;
   }
-  60% {
+  20% {
     opacity: 0, 8;
     z-index: 0;
   }
@@ -232,7 +232,7 @@ h3 {
   0% {
     opacity: 1;
   }
-  60% {
+  20% {
     opacity: 0, 8;
     z-index: 0;
   }
@@ -263,7 +263,7 @@ h3 {
   padding: 0 5rem;
 }
 .bouton:hover {
-  background: linear-gradient(356deg, #a16be0 0%, #ff93e1 100%);
+  background: linear-gradient(356deg, #a674e2 0%, #ff9de4 100%);
   box-shadow: 0 7px 7px 0 rgb(141, 141, 141);
   transform: scale(1.01);
 }
@@ -281,8 +281,8 @@ h3 {
 .coeur span:first-child:hover {
   opacity: 1;
   z-index: 2;
-  -webkit-animation: heart-filling 0.12s ease-in forwards;
-          animation: heart-filling 0.12s ease-in forwards;
+  -webkit-animation: heart-filling 0.2s ease-in-out forwards;
+          animation: heart-filling 0.2s ease-in-out forwards;
 }
 .coeur span:last-child {
   font-size: 3rem;
@@ -714,23 +714,23 @@ header a {
 }
 
 .menu__categorie .plat-card-box:nth-child(2) {
-  -webkit-animation: plat-apparition 0.3s ease-out 0.3s forwards;
-          animation: plat-apparition 0.3s ease-out 0.3s forwards;
+  -webkit-animation: plat-apparition 0.25s ease-out 0.25s forwards;
+          animation: plat-apparition 0.25s ease-out 0.25s forwards;
 }
 
 .menu__categorie .plat-card-box:nth-child(3) {
-  -webkit-animation: plat-apparition 0.3s ease-out 0.45s forwards;
-          animation: plat-apparition 0.3s ease-out 0.45s forwards;
+  -webkit-animation: plat-apparition 0.25s ease-out 0.5s forwards;
+          animation: plat-apparition 0.25s ease-out 0.5s forwards;
 }
 
 .menu__categorie .plat-card-box:nth-child(4) {
-  -webkit-animation: plat-apparition 0.3s ease-out 0.6s forwards;
-          animation: plat-apparition 0.3s ease-out 0.6s forwards;
+  -webkit-animation: plat-apparition 0.25s ease-out 0.75s forwards;
+          animation: plat-apparition 0.25s ease-out 0.75s forwards;
 }
 
 .menu__categorie .plat-card-box:nth-child(5) {
-  -webkit-animation: plat-apparition 0.3s ease-out 0.75s forwards;
-          animation: plat-apparition 0.3s ease-out 0.75s forwards;
+  -webkit-animation: plat-apparition 0.25s ease-out 1s forwards;
+          animation: plat-apparition 0.25s ease-out 1s forwards;
 }
 
 @-webkit-keyframes plat-apparition {
