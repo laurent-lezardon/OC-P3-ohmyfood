@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'shrikhand';
-    src: url(../assets/fonts/shrikhand/Shrikhand-Regular.ttf);
+    src: url('../assets/fonts/shrikhand/Shrikhand-Regular.ttf');
   }
   
   // ------------ polices Roboto ----------------------------------------------------
@@ -87,13 +87,15 @@
   }
 
 
-  // *************** chargement base et utilitaires
-
-@import "./base/reset"; //reset scss
-@import "./utils/variables"; // variables globales
-@import "./base/typography"; // polices et règles générales typographiques
+  
 
 
+
+// *************** chargement base et utilitaires
+
+@import "./base/reset";
+@import "./utils/variables";
+@import "./base/typography";
 // *************** chargement des composants (cards, bouton, coeur)
 
 @import "./layout/loader"; //loader
