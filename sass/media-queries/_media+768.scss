@@ -45,11 +45,18 @@ $lateral-pading: 4%;
 
     }
 
-    footer ul {
-        display: flex;
 
-        li {
-            width: 50%;
+    footer {
+        h2 {
+            text-align: center;
+        }
+        ul {
+            display: flex;
+            
+            li {
+                width: 50%;
+                text-align: center;
+            }
         }
     }
 
@@ -100,5 +107,5 @@ $lateral-pading: 4%;
         max-width: 95%;
     }
 
-    
+
 }

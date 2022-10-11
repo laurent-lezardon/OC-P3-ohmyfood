@@ -76,23 +76,27 @@ $lateral-pading: 2%;
         background-color: $col-section;
         max-width: 1200px;
         margin: 0 auto;
+
     }
     .header-restaurant-display {
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 2rem;
+        
+        // padding: 2rem;
+        padding: 0;
         
 
         }
     .restaurant-header {
-        max-width: 60%;        
+        width: 100%;
+        height: 800px;      
         background-color: $col-section;
-        margin: auto 3%;
-        border-radius: 15px;
+        margin: auto 0;
+        border-radius: 0;
         height: fit-content;
         &__img {
-            height: 20rem;
+            height: 50rem;
             img {
                 transform: translateY(-45%);
             }
@@ -103,8 +107,13 @@ $lateral-pading: 2%;
             border-radius: 15px;
             background-color: white;
             width: 100%;
-            height: 6rem;
+            height: 8rem;
             border-radius: 0;
+            h1 {
+                font-size: 3.6rem ;
+                
+            }
+
             
         }
         img {
@@ -112,6 +121,11 @@ $lateral-pading: 2%;
             height: auto;
             transform: translateY(-35%);
         }
+    }
+
+    .coeur span:last-child, .coeur span:first-child {
+        font-size: 4rem;
+        
     }
     .menu__display {
         width: 100%;
