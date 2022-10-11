@@ -1,10 +1,10 @@
 
-## Présentation du projet 3 : 
+## Présentation du projet 3 - Ohmyfood 
 ![logo du site](./assets/img/logo/ohmyfood.png)
 
 ![screenshot](./assets/img/Smartphone-screenshots.JPG)
 
-#Présentation du projet 3 - Ohmyfood 
+# Travail à réaliser 
 
 - Dynamiser une page web avec des animations CSS
 - Configuration HTML et CSS d'après la maquette mobile fournie (mobile first)
@@ -20,6 +20,8 @@
 - Mettre en place son environnement Front-End
 - Mettre en place une structure de navigation pour un site web
 - Utiliser un système de gestion de versions pour le suivi du projet et son- hébergement
+
+[Projet Ohmyfood - Laurent L](https://github.com/laurent-lezardon/OC-P3-ohmyfood)
 
 
 
