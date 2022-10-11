@@ -1,12 +1,23 @@
-# OC-P3-ohmyfood
-## Présentation du projet
 
- 
-![accueil mobile](./assets/img/logo/ohmyfood.png)
-'<p style='color:red'>
-        Découvrez des restaurants d'exception, sélectionnés par nos soins.
- </p>'
+## Présentation du projet 3 : 
+![logo du site](./assets/img/logo/ohmyfood.png)
 
- // *********** contenu **************************
+![screenshot](./assets/img/Smartphone-screenshots.JPG)
+
+#Présentation du projet 3 - Ohmyfood 
+Dynamiser une page web avec des animations CSS
+Configuration HTML et CSS d'après la maquette mobile fournie (mobile first)
+Utilisation de SASS
+Versionnage sous Github
+réalisation des versions 'responsive'
+Hebergement du projet sous Github
+
+# Compétences évaluées 
+Mettre en œuvre des effets CSS graphiques avancés
+Assurer la cohérence graphique d'un site web
+Mettre en place son environnement Front-End
+Mettre en place une structure de navigation pour un site web
+Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+
 
 
