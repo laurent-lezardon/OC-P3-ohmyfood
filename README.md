@@ -5,6 +5,7 @@
 ![screenshot](./assets/img/Smartphone-screenshots.JPG)
 
 #Présentation du projet 3 - Ohmyfood 
+
 Dynamiser une page web avec des animations CSS
 Configuration HTML et CSS d'après la maquette mobile fournie (mobile first)
 Utilisation de SASS
@@ -13,6 +14,7 @@ réalisation des versions 'responsive'
 Hebergement du projet sous Github
 
 # Compétences évaluées 
+
 Mettre en œuvre des effets CSS graphiques avancés
 Assurer la cohérence graphique d'un site web
 Mettre en place son environnement Front-End
