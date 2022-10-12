@@ -21,7 +21,7 @@
 - Mettre en place une structure de navigation pour un site web
 - Utiliser un système de gestion de versions pour le suivi du projet et son- hébergement
 
-[Projet Ohmyfood - Laurent L](https://laurent-lezardon.github.io/OC-P3-ohmyfood/)
+**site du projet :**[Projet Ohmyfood - Laurent L](https://laurent-lezardon.github.io/OC-P3-ohmyfood/)
 
 
 
