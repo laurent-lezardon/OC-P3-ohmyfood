@@ -68,7 +68,7 @@ $heart-filling-duration: 0.2s;
     @include heart-gradient(0%, 0%, 0%);
     @include habillage-texte();
   }
-  20% {
+  98% {
     @include heart-gradient(0%, 50%, 0%);
     @include habillage-texte();
   }
