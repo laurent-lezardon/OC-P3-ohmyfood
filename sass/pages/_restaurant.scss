@@ -43,6 +43,7 @@
     // --------- plat-card-box : container d'un plat voir composant 'plat-card'
     & .plat-card-box {
       opacity: 0;
+      transform: translateY(20px);
     }
   }
 
@@ -56,15 +57,15 @@
 // ============= apparition décalée des plats ===============
 
 // ----- paramètres --------------
-$anim-duration: 0.25s; // durée de l'animation (par plat)
-$anim-delai: 0.25s; // delai entre deux plats
+$anim-duration: 0.8s; // durée de l'animation (par plat)
+$anim-delai: 0.4s; // delai entre deux plats
 $anim-max-childs: 5; // nombre de plats maximum + 1
 
 // -------- generation des délais animations
 @for $i from 2 through $anim-max-childs {
   .menu__categorie .plat-card-box:nth-child(#{$i}) {
     $delai: $i - 1;
-    animation: plat-apparition $anim-duration ease-out $delai*$anim-delai forwards;
+    animation: plat-apparition $anim-duration ease-in-out $delai*$anim-delai forwards;
 
   }
 }
@@ -74,7 +75,13 @@ $anim-max-childs: 5; // nombre de plats maximum + 1
   0% {
     opacity: 0;
   }
+  80% {
+    opacity: 0.95;
+    
+  }
   100% {
     opacity: 1;
+    transform: translateY(0);
+
   }
 }

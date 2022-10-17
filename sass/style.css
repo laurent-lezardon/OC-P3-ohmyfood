@@ -506,6 +506,7 @@ h3 {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 5px 10px rgb(194, 192, 192);
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 .plat-card-box:last-child {
@@ -707,6 +708,7 @@ header a {
 }
 .menu__categorie .plat-card-box {
   opacity: 0;
+  transform: translateY(20px);
 }
 .menu__display-button {
   display: flex;
@@ -714,31 +716,35 @@ header a {
 }
 
 .menu__categorie .plat-card-box:nth-child(2) {
-  -webkit-animation: plat-apparition 0.25s ease-out 0.25s forwards;
-          animation: plat-apparition 0.25s ease-out 0.25s forwards;
+  -webkit-animation: plat-apparition 0.8s ease-in-out 0.4s forwards;
+          animation: plat-apparition 0.8s ease-in-out 0.4s forwards;
 }
 
 .menu__categorie .plat-card-box:nth-child(3) {
-  -webkit-animation: plat-apparition 0.25s ease-out 0.5s forwards;
-          animation: plat-apparition 0.25s ease-out 0.5s forwards;
+  -webkit-animation: plat-apparition 0.8s ease-in-out 0.8s forwards;
+          animation: plat-apparition 0.8s ease-in-out 0.8s forwards;
 }
 
 .menu__categorie .plat-card-box:nth-child(4) {
-  -webkit-animation: plat-apparition 0.25s ease-out 0.75s forwards;
-          animation: plat-apparition 0.25s ease-out 0.75s forwards;
+  -webkit-animation: plat-apparition 0.8s ease-in-out 1.2s forwards;
+          animation: plat-apparition 0.8s ease-in-out 1.2s forwards;
 }
 
 .menu__categorie .plat-card-box:nth-child(5) {
-  -webkit-animation: plat-apparition 0.25s ease-out 1s forwards;
-          animation: plat-apparition 0.25s ease-out 1s forwards;
+  -webkit-animation: plat-apparition 0.8s ease-in-out 1.6s forwards;
+          animation: plat-apparition 0.8s ease-in-out 1.6s forwards;
 }
 
 @-webkit-keyframes plat-apparition {
   0% {
     opacity: 0;
   }
+  80% {
+    opacity: 0.95;
+  }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -746,8 +752,12 @@ header a {
   0% {
     opacity: 0;
   }
+  80% {
+    opacity: 0.95;
+  }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 footer {
